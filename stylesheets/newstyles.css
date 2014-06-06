@@ -1,0 +1,9 @@
+.question{
+  overflow:hidden;
+}
+.btn{
+  background-color:#999;
+  color:#000;
+  border-radius:5px;
+  padding:10px;
+}
