@@ -13,9 +13,14 @@
   float:left;
   margin: 10px 0 0 10px;
 }
-.box {  
-  display: none; /* по умолчанию прячем все блоки */  
-}  
-.box.visible {  
-  display: block; /* по умолчанию показываем нужный блок */  
-}  
+.preview{
+			height: 30px;
+			overflow: hidden;
+}
+div.t01,  
+div.t02,
+div.t11,  
+div.t12,
+div.t21,  
+div.t22
+{display: none}  	
