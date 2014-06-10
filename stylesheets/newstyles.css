@@ -1,6 +1,9 @@
 .question{
   overflow:hidden;
   margin:0 0 20px 0;
+  border:4px solid #77c34a;
+  border-radius:5px;
+  padding:10px;
 }
 .btn{
   background-color:#999;
