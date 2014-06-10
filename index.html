@@ -35,6 +35,24 @@
               Весна
             </div>
         </div>
+        
+        
+        <div class="section">  
+          <ul class="tabs">  
+            <li class="current">1-я вкладка</li>  
+            <li>2-я вкладка</li>  
+          </ul>  
+          <div class="box visible">  
+            Содержимое первого блока  
+          </div>  
+          <div class="box">  
+            Содержимое второго блока  
+          </div>  
+        </div>
+
+
+
+
         <div class="question"> 
              <p>Уезжаете заграницу?</p>
              <div class="btn"> 
@@ -50,7 +68,7 @@
               Да
             </div>
              <div class="btn"> 
-              НЕт
+              Нет
             </div>
         </div>
         <div class="question"> 
@@ -114,6 +132,21 @@ $ git checkout gh-pages
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    
+    
+    <script>
+      (function($) {  
+        $(function() {  
+          
+          $('ul.tabs').on('click', 'li:not(.current)', function() {  
+            $(this).addClass('current').siblings().removeClass('current')  
+              .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();  
+          })  
+          
+        })  
+        })(jQuery)  
+      
+    </script>
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
