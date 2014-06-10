@@ -82,7 +82,7 @@
         
       </header>
       <section>
-         <div class="section">  
+         <div class="q1">  
             <div class="box visible">  
               <p>Пасспорт</p>
               <p> Виза</p>
@@ -152,7 +152,7 @@ $ git checkout gh-pages
           
           $('ul.tabs').on('click', 'li:not(.current)', function() {  
             $(this).addClass('current').siblings().removeClass('current')  
-              .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();  
+              .parents('div.q1').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();  
           })  
           
         })  
