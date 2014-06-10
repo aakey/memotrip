@@ -20,60 +20,27 @@
       <header>
         <h1>MEMOTRIP</h1>
         
+    
         <div class="question"> 
-           <p> Выберите время года</p>
-             <div class="btn"> 
-              Лето 
-            </div>
-             <div class="btn"> 
-              Осень
-            </div>
-            <div class="btn"> 
-              Зима
-            </div>
-             <div class="btn"> 
-              Весна
-            </div>
+            <p>Будет холодно?</p>
+            <ul class="tabs tabs0">  
+            <li class="t01 tab-current"><a>Да</a></li>  
+            <li class="t02"><a>Нет</a></li>  
+          </ul>  
         </div>
-        
          <div class="question"> 
             <p>Уезжаете заграницу?</p>
             <ul class="tabs tabs1">  
-            <li class="t1 tab-current"><a>Да</a></li>  
-            <li class="t2"><a>Нет</a></li>  
+            <li class="t11 tab-current"><a>Да</a></li>  
+            <li class="t12"><a>Нет</a></li>  
           </ul>  
         </div>
-        
-
-
-
-
-        <div class="question"> 
-             <p>Уезжаете заграницу?</p>
-             <div class="btn"> 
-             Да
-            </div>
-             <div class="btn"> 
-             Нет
-            </div>
-        </div>
-        <div class="question"> 
-           <p> С ночевкой?</p>
-             <div class="btn"> 
-              Да
-            </div>
-             <div class="btn"> 
-              Нет
-            </div>
-        </div>
-        <div class="question"> 
-           <p>Едешь Сам?</p>
-             <div class="btn"> 
-             Да
-            </div>
-             <div class="btn"> 
-              Нет
-            </div>
+         <div class="question"> 
+            <p>С ночевкой?</p>
+            <ul class="tabs tabs2">  
+            <li class="t21 tab-current"><a>Да</a></li>  
+            <li class="t22"><a>Нет</a></li>  
+          </ul>  
         </div>
         
         
@@ -151,10 +118,17 @@ $ git checkout gh-pages
         
       $j('ul.tabs.tabs1 li').click(function(){  
         var thisClass = this.className.slice(0,2);  
-        $j('div.t1').hide();  
-        $j('div.t2').hide();  
+        $j('div.info').addClass("preview");  
+        $j('div.t01').hide();  
+        $j('div.t02').hide();
+        $j('div.t11').hide();  
+        $j('div.t12').hide();
+        $j('div.t21').hide();  
+        $j('div.t22').hide();
         $j('div.' + thisClass).show();  
+        $j('ul.tabs.tabs0 li').removeClass('tab-current');
         $j('ul.tabs.tabs1 li').removeClass('tab-current');  
+        $j('ul.tabs.tabs2 li').removeClass('tab-current');  
         $j(this).addClass('tab-current');  
         });  
         
