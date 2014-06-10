@@ -38,13 +38,10 @@
         
          <div class="question"> 
             <p>Уезжаете заграницу?</p>
-            <div class="section">  
-            <ul class="tabs">  
-              <li class="current">Да</li>  
-              <li>Нет</li>  
-            </ul>  
-            
-          </div>
+            <ul class="tabs tabs1">  
+            <li class="t1 tab-current"><a>Да</a></li>  
+            <li class="t2"><a>Нет</a></li>  
+          </ul>  
         </div>
         
 
@@ -81,21 +78,19 @@
         
         
       </header>
-      <section>
-         <div class="q1">  
-            <div class="box visible">  
-              <p>Пасспорт</p>
+      
+            <div class="t1">  
+             <p>Пасспорт</p>
               <p> Виза</p>
               <p>Билеты букинг</p>
               <p> Справка о доходах</p>
               <p>  Фигня</p>
               <p>  Деньги страны</p>
-            </div>  
-            <div class="box">  
+          </div>  
+          <div class="t2">  
              <p> Документ удостоверяющий личность(пасспорт, водительские права)</p>
              <p> Еще что-гибудь</p>
-            </div>  
-           </div>
+          </div>  
 <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Привет путешественникам.</h3>
 
@@ -147,17 +142,22 @@ $ git checkout gh-pages
     
     
     <script>
-      (function($) {  
-        $(function() {  
-          
-          $('ul.tabs').on('click', 'li:not(.current)', function() {  
-            $(this).addClass('current').siblings().removeClass('current')  
-              .parents('div.q1').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();  
-          })  
-          
-        })  
-        })(jQuery)  
-      
+      var $j = jQuery.noConflict();  
+  
+      $j(document).ready(function() {  
+        
+      $j('ul.tabs li').css('cursor', 'pointer');  
+        
+      $j('ul.tabs.tabs1 li').click(function(){  
+        var thisClass = this.className.slice(0,2);  
+        $j('div.t1').hide();  
+        $j('div.t2').hide();  
+        $j('div.' + thisClass).show();  
+        $j('ul.tabs.tabs1 li').removeClass('tab-current');  
+        $j(this).addClass('tab-current');  
+        });  
+        
+      });  
     </script>
     <script src="javascripts/scale.fix.js"></script>
     
