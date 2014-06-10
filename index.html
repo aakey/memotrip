@@ -162,10 +162,8 @@ $ git checkout gh-pages
         $j(this).addClass('tab-current');  
         });  
         
-      }); 
-      
-      
-       $j('ul.tabs.tabs1 li').click(function(){  
+        
+        $j('ul.tabs.tabs1 li').click(function(){  
         var thisClass = this.className.slice(0,2);  
         $j('div.t11').hide();  
         $j('div.t12').hide();
@@ -174,8 +172,8 @@ $ git checkout gh-pages
         $j('ul.tabs.tabs1 li').removeClass('tab-current');
         $j(this).addClass('tab-current');  
         });  
-        
-      });  
+      }); 
+
     </script>
     <script src="javascripts/scale.fix.js"></script>
     
