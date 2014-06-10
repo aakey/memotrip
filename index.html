@@ -21,8 +21,8 @@
         <h1>MEMOTRIP</h1>
         
     
-        <div class="question"> 
-            <p>Будет холодно?</p>
+        <div class="question fish"> 
+            <p>Температура ниже 15?</p>
             <ul class="tabs tabs0">  
             <li class="t01 tab-current"><a>Да</a></li>  
             <li class="t02"><a>Нет</a></li>  
@@ -47,17 +47,13 @@
       </header>
        <section>
             <div class="t01">  
-             <p>Куртка</p>
-              <p> Трусы на меху</p>
-              <p>Водолазка</p>
-              <p> Зонт</p>
-              
+				<p>Куртка</p>
+				<p>Штаны</p>
+				<p>Водолазка</p>
+				<p>Шапка</p>
           </div>  
           <div class="t02">  
-             <p> панамка</p>
-             <p> Соль</p>
-              <p> Защита от мокриц</p>
-          </div>
+           </div>
           
           <div class="t11">  
              <p>Пасспорт</p>
@@ -94,10 +90,8 @@
 <div class="info">
 <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Привет путешественникам.</h3>
-
-<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить. 
-</p>
-
+<!--
+<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить. </p>
 
 <h3>
 <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Ты голову дома не забыл?</h3>
@@ -134,6 +128,7 @@ $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
  <code>gh-pages</code> 
+ -->
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/aakey">aakey</a></p>
@@ -150,26 +145,46 @@ $ git checkout gh-pages
       $j('ul.tabs li').css('cursor', 'pointer');  
         
       $j('ul.tabs.tabs0 li').click(function(){  
-        var thisClass = this.className.slice(0,2);  
+        var thisClass = this.className.slice(0,3);  
        
         $j('div.t01').hide();  
         $j('div.t02').hide();
+		$j('div.t11').hide();  
+        $j('div.t12').hide();
+		$j('div.t21').hide();  
+        $j('div.t22').hide();
         
-        $j('div.info').addClass("preview");  
         $j('div.' + thisClass).show();  
         $j('ul.tabs.tabs0 li').removeClass('tab-current');
+		$j('ul.tabs.tabs1 li').removeClass('tab-current');
+		$j('ul.tabs.tabs2 li').removeClass('tab-current');
        
         $j(this).addClass('tab-current');  
         });  
-        
-        
-        $j('ul.tabs.tabs1 li').click(function(){  
-        var thisClass = this.className.slice(0,2);  
-        $j('div.t11').hide();  
+		
+		$j('ul.tabs.tabs1 li').click(function(){  
+        var thisClass = this.className.slice(0,3);  
+       
+       
+		$j('div.t11').hide();  
         $j('div.t12').hide();
-        $j('div.info').addClass("preview");  
+		
+        
         $j('div.' + thisClass).show();  
         $j('ul.tabs.tabs1 li').removeClass('tab-current');
+		$j(this).addClass('tab-current');  
+        });  
+		
+		
+		
+		
+		$j('ul.tabs.tabs2 li').click(function(){  
+        var thisClass = this.className.slice(0,3);  
+       
+       	$j('div.t21').hide();  
+        $j('div.t22').hide();
+        $j('div.' + thisClass).fadeIn(800);  
+		$j('ul.tabs.tabs2 li').removeClass('tab-current');
         $j(this).addClass('tab-current');  
         });  
       }); 
