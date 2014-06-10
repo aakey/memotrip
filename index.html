@@ -149,19 +149,29 @@ $ git checkout gh-pages
         
       $j('ul.tabs li').css('cursor', 'pointer');  
         
-      $j('ul.tabs.tabs1 li').click(function(){  
+      $j('ul.tabs.tabs0 li').click(function(){  
         var thisClass = this.className.slice(0,2);  
-        $j('div.info').addClass("preview");  
+       
         $j('div.t01').hide();  
         $j('div.t02').hide();
-        $j('div.t11').hide();  
-        $j('div.t12').hide();
-        $j('div.t21').hide();  
-        $j('div.t22').hide();
+        
+        $j('div.info').addClass("preview");  
         $j('div.' + thisClass).show();  
         $j('ul.tabs.tabs0 li').removeClass('tab-current');
-        $j('ul.tabs.tabs1 li').removeClass('tab-current');  
-        $j('ul.tabs.tabs2 li').removeClass('tab-current');  
+       
+        $j(this).addClass('tab-current');  
+        });  
+        
+      }); 
+      
+      
+       $j('ul.tabs.tabs1 li').click(function(){  
+        var thisClass = this.className.slice(0,2);  
+        $j('div.t11').hide();  
+        $j('div.t12').hide();
+        $j('div.info').addClass("preview");  
+        $j('div.' + thisClass).show();  
+        $j('ul.tabs.tabs1 li').removeClass('tab-current');
         $j(this).addClass('tab-current');  
         });  
         
