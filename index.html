@@ -15,11 +15,11 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="startTime()">
     <div class="wrapper">
       <header>
-        <h1>MEMOTRIP</h1>
-        
+        <h1>MEMOTRIP <p id="txt"> </p></h1>
+         
         <div class="question abroad"> 
             <p>Уезжаете заграницу?</p>
             <ul class="tabs tabs0">  
@@ -30,8 +30,8 @@
         <div class="question temperature"> 
             <p>Температура ниже 15?</p>
             <ul class="tabs tabs1">  
-            <li class="t11 tab-current"><a>Да</a></li>  
-            <li class="t12"><a>Нет</a></li>  
+            <li class="t11"><a>Да</a></li>  
+            <li class="t12 tab-current"><a>Нет</a></li>  
           </ul>  
         </div>
         <div class="question sleep"> 
@@ -63,7 +63,7 @@
           </ul>  
         </div>
         <div class="question gadget">
-          <p>Гаджеты в поход</p>
+          <p>Едем на природу?</p>
           <ul class="tabs tabs6">  
             <li class="t61"><a>Да</a></li>  
             <li class="t62 tab-current"><a>Нет</a></li>  
@@ -73,6 +73,10 @@
         
       </header>
        <section>
+          <div class="instruction">
+            Это базовый набор вещей, который необходим для путешествий.
+            Используйте фильтры слева, чтобы подогнать список именно для вашего случая.
+          </div>
 
           <article>
             <div class="title">
@@ -279,75 +283,46 @@
 
       -->
 
+<div class="desc">     
+  <a href="#" class="btn-info">Как, зачем и почему был сделан этот сайт</a>       
+  <div class="info" >
+    <h3>
+    <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Привет путешественникам.</h3>
 
+    <p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить. </p>
 
+    <h3>
+    <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Ты голову дома не забыл?</h3>
 
+    <p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь. В итоге я страдал.</p>
+    <p> Самый печальный случай, когда я уехал и забыл ключи.</p>
 
-        
+    <h3>
+    <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Список вещей в дорогу - начало эволюции</h3>
 
+    <p>Эту проблему я решал, составляя список на клочке бумаги, который составлял за день до отьезда. Но как оказывалось, составлять списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
 
-          
+    <h3>
+    <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Второй этап эволюции или как список стал здоровым мутантом</h3>
 
+    <p>Очень быстро я понял, что универсальный список - это утопия. Универсального списка нет, не было и не будет. Каждая поездка уникальная, отдых дикарем под Черкащиной разительно отличается от отдыха в Турции все включено.</p>
+    <p>Небольшой списочек из кусочка бумаги перекочевал в Word. И вдруг постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествия он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым.</p>
+    <p>Поэтому я решил не останавливаться на достигнутом и навести красоту - список опять эволюционировал.</p>
 
-          
+    <h3>
+    <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Третья фаза эволюции</h3>
 
-         
-            
-          
-          
-
-          
-
-          
-
-          
-      
-          
-           
-          
-          
-         
-          
+    <p>Наконец список необходимых вещей превратился в "бабочку". В МЕМОТРИП вы можете выбрать несколько параметров путешествия и получить более менее внятный набор вещей, которые нужно захватить именно в Ваш круиз. </p>
+    <p>МЕМОТРИП удобен, хорошо читается и всегда под рукой.</p>
        
-               
- <!--         
-<div class="info">
+    <h3>
+    <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Дисклаймер</h3>
 
-<h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Привет путешественникам.</h3>
-
-<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить. </p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Ты голову дома не забыл?</h3>
-
-<p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь. В итоге я страдал.</p>
-<p> Самый печальный случай, когда я уехал и забыл ключи.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Список вещей в дорогу - начало эволюции</h3>
-
-<p>Эту проблему я решал, составляя список на клочке бумаги, который составлял за день до отьезда. Но как оказывалось, составлять списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Второй этап эволюции или как список стал здоровым мутантом</h3>
-
-<p>Очень быстро я понял, что универсальный список - это утопия. Универсального списка нет, не было и не будет. Каждая поездка уникальная, отдых дикарем под Черкащиной разительно отличается от отдыха в Турции все включено.</p>
-<p>Небольшой списочек из кусочка бумаги перекочевал в Word. И вдруг постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествия он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым.</p>
-<p>Поэтому я решил не останавливаться на достигнутом и навести красоту - список опять эволюционировал.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Третья фаза эволюции</h3>
-
-<p>Наконец список необходимых вещей превратился в "бабочку". В МЕМОТРИП вы можете выбрать несколько параметров путешествия и получить более менее внятный набор вещей, которые нужно захватить именно в Ваш круиз. </p>
-<p>МЕМОТРИП удобен, хорошо читается и всегда под рукой.</p>
-   
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Дисклаймер</h3>
-
-<p>Запомните - это набор базовых вещей. Возможно вам могут пригодится предметы, которых в этом списке нет. Не забывайте их!</p>
-<p>Счастливого пути!</p> 
-</div>
+    <p>Запомните - это набор базовых вещей. Возможно вам могут пригодится предметы, которых в этом списке нет. Не забывайте их!</p>
+    <p>Счастливого пути!</p> 
+  </div>
+</div>  
+<!--
  <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages
@@ -431,12 +406,39 @@ $ git checkout gh-pages
         $j('div.' + thisClass).slideDown(600);  
         $j('ul.tabs.tabs6 li').removeClass('tab-current');
         $j(this).addClass('tab-current');  
-      });   
-  
+      });
+
+
+        $j('.btn-info').click(function(){ 
+          
+         $j('.info').toggle("slow");
+
+      });
   });
-      
+    
 
    
+    </script>
+    <script type="text/javascript">
+      function startTime()
+      {
+      var tm=new Date();
+      var h=tm.getHours();
+      var m=tm.getMinutes();
+      var s=tm.getSeconds();
+      m=checkTime(m);
+      s=checkTime(s);
+      document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+      t=setTimeout('startTime()',500);
+      }
+      function checkTime(i)
+      {
+      if (i<10)
+      {
+      i="0" + i;
+      }
+      return i;
+      }
     </script>
     <script src="javascripts/scale.fix.js"></script>
     
