@@ -27,15 +27,38 @@ padding:20px;
 	margin:0 0 5px 0;
 	padding:0;
 }
-.fish{
-	background: url(../image/fish.jpg) no-repeat;
-}
+
 .abroad{
 	background: url(../image/plane.jpg) no-repeat;
 }
 .temperature{
 	background: url(../image/sun.jpg) no-repeat;
 }
+.abroad{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/airplane-3-m.png) no-repeat;
+}
+.nature{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/bunch-flowers-m.png) no-repeat;
+}
+.cold{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/snow-m.png) no-repeat;	
+}
+.sun{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/sun-3-m.png) no-repeat;	
+}
+.fish{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/fish-2-m.png) no-repeat;	
+}
+.camp{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/tent-m.png) no-repeat;	
+}
+.hunt{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/easter-rabbit-m.png) no-repeat;	
+}
+.swim{
+	background: url(http://www.iconsdb.com/icons/preview/color/77C34A/swimming-m.png) no-repeat;	
+}
+
 .btn{
 	background-color:#999;
 	color:#000;
@@ -165,6 +188,31 @@ article .title{
 }
 .info{
 	display:none;
+}
+.q{
+	overflow:hidden;
+	margin:0 0 10px 0;
+	padding:0 0 0 40px;
+	line-height:32px;
+	//background:#fafafa;
+}
+.check{
+	 width:18px;
+	 height:18px;
+	 border:3px solid #77c34a;
+	 float:right;
+	 background:#fff;
+	 border-radius:2px;
+	margin:4px 0 0 0;
+	 
+}
+.check:hover{
+	 cursor:hand;
+	 cursor:pointer;
+}
+.active{
+	background: url(http://abali.ru/wp-content/uploads/2011/03/galochka-check_16x16.png) 1px 1px no-repeat;
+
 }
 
 
