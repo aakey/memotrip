@@ -104,6 +104,7 @@ section{
 section p{
 	margin:0;
 	padding:0;
+	font-size:12px;
 }
 article p:nth-child(odd) {
 	background: #fafafa;
@@ -150,7 +151,11 @@ article .title{
 	float:right;
 }
 .instruction{
-	margin:0 0 40px 0;
+	margin:0 0 25px 0;
+}
+.instruction p{
+	font-size:12px;
+	color:#77c34a;
 }
 .desc{
 	margin:30px 0 0 0;
