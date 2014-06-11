@@ -121,24 +121,34 @@ article .title{
 	background:#fff;
 	display: table-cell;
     vertical-align: middle;
-	border-right:1px solid #666;
-	width:40px;
+	
+	width:90px;
 	padding:0 10px 0 0;
 
 }
 .list{
-	width:490px;
-	margin:0 0 0 10px;
+	width:440px;
+	padding:0 0 0 10px;
+	border-left:1px solid #77c34a;
+	border-radius:5px;
+	margin: 0 0 2px <0></0>;
+}
+.list span{ 
+	float:left;
 }
 .triangle{
-	width: 5px;
-    height: 5px;
-    border-top: 5px solid transparent;
-    border-left: 10px solid red;
-    border-bottom: 5px solid transparent;
+	width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 6px solid #77c34a;
+    border-bottom: 3px solid transparent;
 	
 	display: table-cell;
     vertical-align: middle;
+	position:relative;
+	left:10px;
+	top:10px;
+	float:right;
 }
 
 
