@@ -19,12 +19,68 @@
     <div class="wrapper">
       <header>
         <h1>MEMOTRIP <p id="txt"> </p></h1>
-         
+
+        <div class="q abroad">
+          <span>Пересекаем границу?</span>
+          <div class="check ch1"></div>
+        </div>
+        <div class="q nature">
+          <span>Едем на природу?</span>
+          <div class="check ch2"></div>
+        </div>
+
+        <div class="q camp">
+          <span>C ночевкой?</span>
+          <div class="check ch3"></div>
+        </div>
+
+        <div class="q cold">
+          <span>Температура ниже 15?</span>
+          <div class="check ch4"></div>
+        </div>
+        <div class="q sun">
+          <span>Температура выше 25?</span>
+          <div class="check ch5"></div>
+        </div>
+        <div class="q swim">
+          <span>Будете купаться?</span>
+          <div class="check ch6"></div>
+        </div>
+        <div class="q fish">
+          <span>Будете купаться?</span>
+          <div class="check ch7"></div>
+        </div>
+        <div class="q fish">
+          <span>Будете рыбачить?</span>
+          <div class="check ch8"></div>
+        </div>
+        <div class="q hunt">
+          <span>Будете охотиться?</span>
+          <div class="check ch9"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      <!--
         <div class="question abroad"> 
-            <p>Уезжаете заграницу?</p>
+            <p>Едем заграницу?</p>
             <ul class="tabs tabs0">  
             <li class="t01"><a>Да</a></li>  
             <li class="t02 tab-current"><a>Нет</a></li>  
+          </ul>  
+        </div>
+        <div class="question gadget">
+          <p>Едем на природу?</p>
+          <ul class="tabs tabs6">  
+            <li class="t61"><a>Да</a></li>  
+            <li class="t62 tab-current"><a>Нет</a></li>  
           </ul>  
         </div>
         <div class="question temperature"> 
@@ -41,6 +97,7 @@
             <li class="t22 tab-current"><a>Нет</a></li>  
           </ul>  
         </div>
+     
         <div class="question water">
           <p>Будете купаться?</p>
           <ul class="tabs tabs3">  
@@ -61,14 +118,8 @@
             <li class="t51"><a>Да</a></li>  
             <li class="t52 tab-current"><a>Нет</a></li>  
           </ul>  
-        </div>
-        <div class="question gadget">
-          <p>Едем на природу?</p>
-          <ul class="tabs tabs6">  
-            <li class="t61"><a>Да</a></li>  
-            <li class="t62 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
+        </div> 
+         -->
         
         
       </header>
@@ -253,6 +304,7 @@
                 <p>Снасти</p>
                 <p>Прикорм</p>
                 <p>Наживка</p>
+                
             </div>  
             <div class="t42">  
                <p></p>
@@ -347,7 +399,49 @@ $ git checkout gh-pages
     
     <script>
     var $j = jQuery.noConflict();  
+
+
+
     $j(document).ready(function() { 
+
+     $j(".ch1").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t01").slideToggle("slow");
+        
+      }); 
+     $j(".ch2").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t99").slideToggle("slow");
+      });
+      $j(".ch3").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t21").slideToggle("slow");
+      });
+      $j(".ch4").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t41").slideToggle("slow");
+      });
+      $j(".ch5").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t51").slideToggle("slow");
+      });
+      $j(".ch6").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t61").slideToggle("slow");
+      });
+      $j(".ch7").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t61").slideToggle("slow");
+      });
+      $j(".ch8").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t61").slideToggle("slow");
+      });
+      $j(".ch9").click(function () {
+        $j(this).toggleClass("active");
+        $j(".t61").slideToggle("slow");
+      });
+
 
       $j('ul.tabs li').css('cursor', 'pointer');  
           
@@ -358,7 +452,10 @@ $ git checkout gh-pages
           $j('div.' + thisClass).slideDown(600);  
           $j('ul.tabs.tabs0 li').removeClass('tab-current');
           $j(this).addClass('tab-current');  
-      });  
+      });
+
+
+
   		
   		$j('ul.tabs.tabs1 li').click(function(){  
           var thisClass = this.className.slice(0,3);  
