@@ -1,15 +1,41 @@
+body{
+padding:20px;
+}
+.wrapper{
+	overflow:hidden;
+}
+
 .question{
   overflow:hidden;
-  margin:0 0 20px 0;
+  margin:0 0 10px 0;
   border:3px solid #77c34a;
   border-radius:5px;
-  padding:5px;
+  padding:0 0 0 70px;
 }
 .question ul{
-background:#fff;
+background: #eee;
+background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+
+margin:0 0 5px 0;
+padding:0;
+}
+.question p{
+margin:0 0 5px 0;
+padding:0;
 }
 .fish{
  background: url(../image/fish.jpg) no-repeat;
+}
+.abroad{
+ background: url(../image/plane.jpg) no-repeat;
+}
+.temperature{
+ background: url(../image/sun.jpg) no-repeat;
 }
 .btn{
   background-color:#999;
@@ -28,20 +54,91 @@ div.t02,
 div.t11,  
 div.t12,
 div.t21,  
-div.t22
+div.t22,
+div.t31,  
+div.t32,
+div.t41,  
+div.t42,
+div.t51,  
+div.t52,
+div.t61,  
+div.t62
 {display: none;}
 
 header ul{
-
-height: 20px;
+	height: 20px;
+	width:auto;
+	width:180px;
 }
 header li {
-width: 89px;
-float: left;
-border-right: 1px solid #d2d2d2;
-height: 20px;
+	width: 90px;
+	float: left;
+	height: 20px;
+	border-right: none
+}
+header ul li + li {
+	width: 89px;
+	border-left: 1px solid #fff;
 }
 
 .tab-current{
 	background:#77c34a;
+
+	background: -moz-linear-gradient(top, #A8FA78 0%, #67AA3F 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A8FA78), color-stop(100%,#67AA3F));
+	background: -webkit-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
+	background: -o-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
+	background: -ms-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
+	background: linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
 }
+header ul a {
+	color: #666;
+}
+section{
+	margin:50px 0 0 0;
+	width:550px;
+}
+section h3{
+	background:#77c34a;
+	color:#fff;
+	padding:3px;
+}
+section p{
+	margin:0;
+	padding:0;
+}
+section p:nth-child(odd) {
+	background: #fafafa;
+	//background: rgba(50,50,50,0.1);
+}
+article{
+	display: table;
+	width:100%;
+	overflow:hidden;
+}
+article .title{
+	position:relative;
+	background:#fff;
+	display: table-cell;
+    vertical-align: middle;
+	border-right:1px solid #666;
+	width:40px;
+	padding:0 10px 0 0;
+
+}
+.list{
+	width:490px;
+	margin:0 0 0 10px;
+}
+.triangle{
+	width: 5px;
+    height: 5px;
+    border-top: 5px solid transparent;
+    border-left: 10px solid red;
+    border-bottom: 5px solid transparent;
+	
+	display: table-cell;
+    vertical-align: middle;
+}
+
+
