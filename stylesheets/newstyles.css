@@ -71,21 +71,15 @@ padding:20px;
 	height: 30px;
 	overflow: hidden;
 }
-div.t01,  
-div.t02,
-div.t11,  
-div.t12,
-div.t21,  
-div.t22,
-div.t31,  
-div.t32,
-div.t41,  
-div.t42,
-div.t51,  
-div.t52,
-div.t61,  
-div.t62
-{display: none;}
+.abroad_list,  
+.nature_list,
+.cold_list, 
+.sun_list, 
+.fish_list,   
+.hunt_list,  
+.swim_list,   
+.drink_list
+ {display: none;}
 
 header ul{
 	height: 20px;
@@ -147,6 +141,7 @@ article .title{
 	width:90px;
 	padding:0 10px 0 0;
 }
+
 .list{
 	width:440px;
 	padding:0 0 0 10px;
