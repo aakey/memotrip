@@ -1,9 +1,4 @@
-body{
-padding:20px;
-}
-.wrapper{
-	overflow:hidden;
-}
+
 .question{
   overflow:hidden;
   margin:0 0 10px 0;
@@ -128,10 +123,6 @@ padding:20px;
 	width: 16px;
 	height: 16px;
 }
-
-
-
-
 .btn{
 	background-color:#999;
 	color:#000;
@@ -155,34 +146,17 @@ padding:20px;
 .firstaid_list,
 .camp_list,
 .board_list,
-.gadget_list
+.gadget_list,
+.rain_list
  {display: none;}
 
-header{
-	width:220px;
+.logo{
 }
-header li {
-	width: 90px;
-	float: left;
-	height: 20px;
-	border-right: none
-}
-header ul li + li {
-	width: 89px;
-	border-left: 1px solid #fff;
-}
-
-.tab-current{
-	background:#77c34a;
-	background: -moz-linear-gradient(top, #A8FA78 0%, #67AA3F 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A8FA78), color-stop(100%,#67AA3F));
-	background: -webkit-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
-	background: -o-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
-	background: -ms-linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
-	background: linear-gradient(top, #A8FA78 0%,#67AA3F 100%);
-}
-header ul a {
-	color: #666;
+#timer{
+	float:right;
+	color:#77c34a;
+	font-weight:bold;
+	font-size:16px;
 }
 section{
 	margin:0;
@@ -201,26 +175,8 @@ section p{
 	padding:0;
 	font-size:13px;
 }
-article:nth-child(odd) {
-	background: #fafafa;
-	//background: rgba(50,50,50,0.1);
-}
-article{
-	display: table;
-	width:100%;
-	overflow:hidden;
-	background: #fdfdfd;
-	margin: 0 0 2px 0;
-}
-article .title{
-	position:relative;
-	background:#fff;
-	display: table-cell;
-    vertical-align: middle;
-	
-	width:90px;
-	padding:0 10px 0 0;
-}
+
+
 
 .list{
 	width:448px;
@@ -262,14 +218,14 @@ article .title{
 	color:#77c34a;
 }
 .desc{
-	margin:30px 0 0 0;
+	padding:10px 0 0 0;
 }
-.btn-info{
+.btn-info, .btn-remember{
 	border-bottom:1px dashed #666;
 }
-.info{
+.info, .remember{
 	display:none;
-	margin:20px 0 0 0;
+	
 }
 .q{
 	overflow:hidden;
@@ -278,22 +234,7 @@ article .title{
 	font-size:12px;
 	color:#aaa;
 }
-.q span{
-	
-}
-.check{
-	 width:12px;
-	 height:12px;
-	 border:2px solid #ccc;
-	 float:right;
-	 background:#fff;
-	 border-radius:2px;
-	 
-}
-.check:hover{
-	 cursor:hand;
-	 cursor:pointer;
-}
+
 .active{
 	background: url(http://abali.ru/wp-content/uploads/2011/03/galochka-check_16x16.png) 1px 1px no-repeat;
 	background: url(../image/mark.png) 1px 1px no-repeat;
