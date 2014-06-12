@@ -23,6 +23,18 @@
 			<img src="image/logo.png" alt="" />
 		</div>
         <!--<h1>MEMOTRIP</h1>-->
+	<div class="q finish">
+		  <div class="abroad"></div>
+		  <span style="font-size:14px;">Отдых на природе</span>
+		  <div class="check mm01"></div>
+	</div>
+	<div class="q start">
+		  <div class="abroad"></div>
+		  <span style="font-size:14px;">Цивилизованный отдых</span>
+		  <div class="check mm02"></div>
+	</div>
+		
+	<div class="natural">
 		<div class="category">
 			<h4>Цивилизованный отдых</h4>
 			
@@ -129,13 +141,125 @@
 			  <div class="check ch11"></div>
 			</div>
 		</div>
+	</div>
+	
+	
+	<!-- Для цивилизованного отдыха-->
+	<div class="civil">
+		<div class="category">
+			<h4>Цивилизованный отдых</h4>
+			
+			<div class="q">
+			  <div class="abroad"></div>
+			  <span>Еду заграницу</span>
+			  <div class="check ch1"></div>
+			</div>
+			<div class="q">
+			  <div class="abroad"></div>
+			  <span>Еду в тур</span>
+			  <div class="check ch15"></div>
+			</div>
+		</div>	
+		
+		<div class="category">
+			<h4>Отдых на природе</h4>		
+			<div class="q">
+			  <div class="nature"></div>
+			  <span>Еду на природу</span>
+			  <div class="check ch2"></div>
+			</div>
+		
+			<div class="q">
+			  <div class="camp"></div>
+			  <span>C ночевкой</span>
+			  <div class="check ch3"></div>
+			</div>
+		</div>
+		<div class="category">
+			<h4>Прогноз погоды</h4>
+			<div class="q">
+			 <div class="cold"></div>
+			  <span>Будет холодно?</span>
+			  <div class="check ch4"></div>
+			</div>
+			
+			<div class="q">
+			 <div class="sun"></div>
+			  <span>Будет жарко и солнечно</span>
+			  <div class="check ch5"></div>
+			</div>
+			
+			<div class="q">
+			 <div class="rain"></div>
+			  <span>Будет дождь</span>
+			  <div class="check ch13"></div>
+			</div>
+		</div>
+		<div class="category">
+		<h4>Возле воды</h4>
+			<div class="q">
+			 <div class="swim"></div>
+			  <span>Буду купаться</span>
+			  <div class="check ch6"></div>
+			</div>
+			
+			<div class="q">
+			<div class="fish"></div>
+			  <span>Буду рыбачить</span>
+			  <div class="check ch7"></div>
+			</div>
+		</div>	
+		<div class="category">
+			<h4>В горах</h4>
+			<div class="q">
+				<div class="board"></div>
+			  <span>Буду кататься на сноуборде</span>
+			  <div class="check ch10"></div>
+			</div>
+		</div>
+		<div class="category">
+			<h4>Активный отдых</h4>
+			<div class="q">
+				<div class="hunt"></div>
+			  <span>Буду охотиться</span>
+			  <div class="check ch8"></div>
+			</div>
+			
+			<div class="q">
+			<div class="drink"></div>
+			  <span>Буду пить</span>
+			  <div class="check ch9"></div>
+			</div>
+		</div>
+		<div class="category">
+			<h4>Гаджеты</h4>
+			<div class="q">
+				<div class="gadget"></div>
+			  <span>Захвачу планшет</span>
+			  <div class="check ch12"></div>
+			</div>
+			<div class="q">
+				<div class="notebook"></div>
+				<span>Захвачу ноутбук</span>
+				<div class="check ch14"></div>
+			</div>
+        </div>
+		<div class="category">
+			<h4>Беру аптечку</h4>
+			<div class="q">
+				<div class="firstaid"></div>
+			  <span>Аптечка</span>
+			  <div class="check ch11"></div>
+			</div>
+		</div>
+	</div>
 		
 		
         
       </header>
        <section>
           <div class="instruction">
-            <p style="font-size:14px; color:#666;"><strong>Хоп-хоп!</strong> Не забывай свои вещи, когда едешь на отдых - используй MEMOTRIP.</p>
+            <p style="font-size:14px; color:#666;"><strong>Хоп-хоп!</strong> MEMOTRIP - конструктор списка вещей для путешественников.</p>
             <p>Внизу базовый набор предметов, необходимых для небольшого прогулочного путешествия без ночевки.
             Используйте фильтры слева, чтобы подобрать вещи для именно для своей ситуации.</p>
 			<p style="font-size:13px; color:#666;"> Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></p>
@@ -512,6 +636,17 @@ $ git checkout gh-pages
 	$j(".ch15").click(function () {
         $j(this).toggleClass("active");
         $j(".tour_list").fadeToggle("slow");
+	});
+	
+	$j(".mm01").click(function () {
+        $j(this).toggleClass("active");
+        $j(".natural").slideToggle("slow");
+		$j(".start").slideToggle("slow");
+	});
+	$j(".mm02").click(function () {
+        $j(this).toggleClass("active");
+        $j(".civil").slideToggle("slow");
+        $j(".finish").slideToggle("slow");
 	});
 
 
