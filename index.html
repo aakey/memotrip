@@ -18,67 +18,82 @@
   <body onload="startTime()">
     <div class="wrapper">
       <header>
-        <h1>MEMOTRIP <p id="txt"> </p></h1>
-
-        <div class="q">
-          <div class="abroad"></div>
-          <span>Едем заграницу?</span>
-          <div class="check ch1"></div>
-        </div>
-        <div class="q">
-          <div class="nature"></div>
-          <span>Едем на природу?</span>
-          <div class="check ch2"></div>
-        </div>
-
+		<div id="timer"> </div>
+		<div class="logo">
+			<img src="image/logo.png" alt="" />
+		</div>
+        <!--<h1>MEMOTRIP</h1>-->
+		<div class="category">
+			<h4>Вид отдыха</h4>
+			
+			<div class="q">
+			  <div class="abroad"></div>
+			  <span>Едем заграницу?</span>
+			  <div class="check ch1"></div>
+			</div>
+			<div class="q">
+			  <div class="nature"></div>
+			  <span>Едем на природу?</span>
+			  <div class="check ch2"></div>
+			</div>
+			</div>
         <div class="q">
 		  <div class="camp"></div>
           <span>C ночевкой?</span>
           <div class="check ch3"></div>
         </div>
-
-        <div class="q">
-		 <div class="cold"></div>
-          <span>Температура ниже 15?</span>
-          <div class="check ch4"></div>
-        </div>
-		
-        <div class="q">
-		 <div class="sun"></div>
-          <span>Температура выше 25?</span>
-          <div class="check ch5"></div>
-        </div>
-		
-        <div class="q">
-		 <div class="swim"></div>
-          <span>Будете купаться?</span>
-          <div class="check ch6"></div>
-        </div>
-		
-        <div class="q">
-		<div class="fish"></div>
-          <span>Будете рыбачить?</span>
-          <div class="check ch7"></div>
-        </div>
-		
-        <div class="q">
-			<div class="hunt"></div>
-          <span>Будете охотиться?</span>
-          <div class="check ch8"></div>
-        </div>
-		
-        <div class="q">
-		<div class="drink"></div>
-          <span>Будете пить?</span>
-          <div class="check ch9"></div>
-        </div>
-		
-		<div class="q">
-			<div class="board"></div>
-          <span>Покатушки на сноуборде?</span>
-          <div class="check ch10"></div>
-        </div>
-		
+		<div class="category">
+			<h4>Погода</h4>
+			<div class="q">
+			 <div class="cold"></div>
+			  <span>Будет холодно?</span>
+			  <div class="check ch4"></div>
+			</div>
+			
+			<div class="q">
+			 <div class="sun"></div>
+			  <span>Будет жарко и солнечно</span>
+			  <div class="check ch5"></div>
+			</div>
+			
+			<div class="q">
+			 <div class="rain"></div>
+			  <span>Будет дождь</span>
+			  <div class="check ch13"></div>
+			</div>
+		</div>
+		<div class="category">
+		<h4>Активный отдых</h4>
+			<div class="q">
+			 <div class="swim"></div>
+			  <span>Будете купаться?</span>
+			  <div class="check ch6"></div>
+			</div>
+			
+			<div class="q">
+			<div class="fish"></div>
+			  <span>Будете рыбачить?</span>
+			  <div class="check ch7"></div>
+			</div>
+			
+			<div class="q">
+				<div class="hunt"></div>
+			  <span>Будете охотиться?</span>
+			  <div class="check ch8"></div>
+			</div>
+			
+			<div class="q">
+			<div class="drink"></div>
+			  <span>Будете пить?</span>
+			  <div class="check ch9"></div>
+			</div>
+			
+			<div class="q">
+				<div class="board"></div>
+			  <span>Покатушки на сноуборде?</span>
+			  <div class="check ch10"></div>
+			</div>
+		</div>
 		<div class="q">
 			<div class="firstaid"></div>
           <span>Аптечка</span>
@@ -90,81 +105,27 @@
           <span>Захвачу планшет</span>
           <div class="check ch12"></div>
         </div>
-
-
-      <!--
-        <div class="question abroad"> 
-            <p>Едем заграницу?</p>
-            <ul class="tabs tabs0">  
-            <li class="t01"><a>Да</a></li>  
-            <li class="t02 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-        <div class="question gadget">
-          <p>Едем на природу?</p>
-          <ul class="tabs tabs6">  
-            <li class="t61"><a>Да</a></li>  
-            <li class="t62 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-        <div class="question temperature"> 
-            <p>Температура ниже 15?</p>
-            <ul class="tabs tabs1">  
-            <li class="t11"><a>Да</a></li>  
-            <li class="t12 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-        <div class="question sleep"> 
-            <p>С ночевкой?</p>
-            <ul class="tabs tabs2">  
-            <li class="t21"><a>Да</a></li>  
-            <li class="t22 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-     
-        <div class="question water">
-          <p>Будете купаться?</p>
-          <ul class="tabs tabs3">  
-            <li class="t31"><a>Да</a></li>  
-            <li class="t32 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-        <div class="question fish">
-          <p>Рыбалка</p>
-          <ul class="tabs tabs4">  
-            <li class="t41"><a>Да</a></li>  
-            <li class="t42 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div>
-        <div class="question hunt">
-          <p>Охота</p>
-          <ul class="tabs tabs5">  
-            <li class="t51"><a>Да</a></li>  
-            <li class="t52 tab-current"><a>Нет</a></li>  
-          </ul>  
-        </div> 
-         -->
-        
         
       </header>
        <section>
           <div class="instruction">
-            <p style="font-size:14px; color:#666;"><strong>Хоп-хоп!</strong> Не забывай свои вещи, когда идешь в поход - используй MEMOTRIP.</p>
-            <p>Внизу базовый набор предметов, которые необходимы для путешествий.
-            Используйте фильтры слева, чтобы подогнать список именно для вашего случая.</p>
+            <p style="font-size:14px; color:#666;"><strong>Хоп-хоп!</strong> Не забывай свои вещи, когда едешь на отдых - используй MEMOTRIP.</p>
+            <p>Внизу базовый набор предметов, которые необходимы для небольшой поездки без ночевки.
+            Используйте фильтры слева, чтобы подобрать вещи для именно для своего путешествия.</p>
+			<p style="font-size:13px; color:#666;"> Вопросы и пожелания на почту <a href="mailto:memotrip@gmail.com">memotrip@gmail.com</a></p>
           </div>
 
 			<article>
 				<div class="list">
 					<div class="main">  
-						<p>Документ удостоверяющий личность</p>
+						<p>Документ, удостоверяющий личность</p>
 						<p>Ключи от дома</p>
 					</div>
 					<!-- за границу -->
 					<div class="abroad_list">  
-						<p>Пасспорт</p>
+						<p>Загранпаспорт</p>
 						<p>Виза</p>
-						<p>Билеты букинг</p>
+						<p>Распечатка брони в гостинице</p>
 						<p>Справка о доходах</p>
 						<p>Документы в электронном варианте</p>
 						<p>Деньги страны</p>
@@ -179,10 +140,13 @@
 			<article>
 				<div class="list">
 					<div class="main">  
+					</div>
+					<div class="nature_list">  
+						<p>Тапочки</p>
 						<p>Носки</p>
 						<p>Нижнее белье</p>
-					</div>
-
+						<p>Шапка</p>
+					</div> 
 					<!-- холодно -->
 					<div class="cold_list">  
 						<p>Куртка</p>
@@ -205,6 +169,12 @@
 						<p>Футболка</p>
 						<p>Сандали</p>
 					</div>
+					<!-- рыбалка -->
+					<div class="fish_list">  
+						<p>Теплый свитер</p>
+						<p>Шапка</p>
+						<p>Сапоги резиновые</p>
+					</div
 				</div>
 				<div class="title">
 					<div class="triangle"></div>
@@ -228,6 +198,11 @@
 						<p>Палатка</p>
 						<p>Спальник</p>
 						<p>Фонарик</p>
+						<p>Топорик</p>
+						
+					</div>
+					<div class="rain_list">  
+						<p>Дождевик</p>
 					</div>  					
 				</div>
 				<div class="title">
@@ -322,8 +297,16 @@
 						<p>Спининг</p>
 						<p>Катушка</p>
 						<p>Снасти</p>
-						<p>Прикорм</p>
 						<p>Наживка</p>
+						<p>Садок</p>
+						<p>Подсак</p>
+						<p>Щипцы длинные</p>
+						<p>Ремкомплект</p>
+						<p>Лодка</p>
+						<p>Весла</p>
+						<p>Доска</p>
+						<p>Терка</p>
+						<p>Чистка</p>
 					</div>  
 				</div>
 				<div class="title">
@@ -365,21 +348,19 @@
 					<span>Сноуборд</span>
 				</div>
 			</article>
-          
-        <!--<h3>Для развлечения</h3>
-          <div class="t61">  
-             <p>Кровать</p>
-              <p> Подушка</p>
-              <p>Постельное белье</p>
-              <p> Одеяло пуховое</p>
-              <p>  Покрывало</p>
-              <p>  грелка</p>
-          </div>  
-          <div class="t62">  
-             <p> Гамак</p>
-          </div>      
-
-      -->
+			
+<div class="desc"> 			
+	<a href="#info" class="btn-remember">Не забудь выключить</a>
+	<div class="remember">
+		<ul>
+			<li>Кухонную плиту</li>
+			<li>Электроприборы</li>
+			<li>Верхний свет</li>
+			<li>Воду на кухне</li>
+			<li>Воду в ванной</li>
+		</ul>
+	</div>
+</div>
 
 <div class="desc">     
   <a href="#info" class="btn-info">Как, зачем и почему был сделан этот сайт</a> 
@@ -483,84 +464,21 @@ $ git checkout gh-pages
         $j(this).toggleClass("active");
         $j(".gadget_list").slideToggle("slow");
       });
+	$j(".ch13").click(function () {
+        $j(this).toggleClass("active");
+        $j(".rain_list").slideToggle("slow");
+	});
 
 
-      $j('ul.tabs li').css('cursor', 'pointer');  
-          
-      $j('ul.tabs.tabs0 li').click(function(){  
-          var thisClass = this.className.slice(0,3);  
-          $j('div.t01').slideUp(500);  
-          $j('div.t02').slideUp(500);
-          $j('div.' + thisClass).slideDown(600);  
-          $j('ul.tabs.tabs0 li').removeClass('tab-current');
-          $j(this).addClass('tab-current');  
-      });
+     
 
 
-
-  		
-  		$j('ul.tabs.tabs1 li').click(function(){  
-          var thisClass = this.className.slice(0,3);  
-      		$j('div.t11').slideUp(500);
-          $j('div.t12').slideUp(500);
-          $j('div.' + thisClass).slideDown(600);  
-          $j('ul.tabs.tabs1 li').removeClass('tab-current');
-      		$j(this).addClass('tab-current');  
-      });  
-  		
-  		$j('ul.tabs.tabs2 li').click(function(){  
-          var thisClass = this.className.slice(0,3);  
-         	$j('div.t21').slideUp(500);
-          $j('div.t22').slideUp(500);
-          $j('div.' + thisClass).slideDown(600);
-      		$j('ul.tabs.tabs2 li').removeClass('tab-current');
-          $j(this).addClass('tab-current');  
-      });
-
-         $j('ul.tabs.tabs3 li').click(function(){  
-        var thisClass = this.className.slice(0,3);  
-        $j('div.t31').slideUp(500);
-        $j('div.t32').slideUp(500);
-        $j('div.' + thisClass).slideDown(600);  
-        $j('ul.tabs.tabs3 li').removeClass('tab-current');
-        $j(this).addClass('tab-current');  
-      });  
-
-
-      $j('ul.tabs.tabs4 li').click(function(){  
-        var thisClass = this.className.slice(0,3);  
-        $j('div.t41').slideUp(500);
-        $j('div.t42').slideUp(500);
-        $j('div.' + thisClass).slideDown(600);  
-        $j('ul.tabs.tabs4 li').removeClass('tab-current');
-        $j(this).addClass('tab-current');  
-      });  
-
-
-      $j('ul.tabs.tabs5 li').click(function(){  
-        var thisClass = this.className.slice(0,3);  
-        $j('div.t51').slideUp(500);
-        $j('div.t52').slideUp(500);
-        $j('div.' + thisClass).slideDown(600);  
-        $j('ul.tabs.tabs5 li').removeClass('tab-current');
-        $j(this).addClass('tab-current');  
-      });  
-
-     $j('ul.tabs.tabs6 li').click(function(){  
-        var thisClass = this.className.slice(0,3);  
-        $j('div.t61').slideUp(500);
-        $j('div.t62').slideUp(500);
-        $j('div.' + thisClass).slideDown(600);  
-        $j('ul.tabs.tabs6 li').removeClass('tab-current');
-        $j(this).addClass('tab-current');  
-      });
-
-
-        $j('.btn-info').click(function(){ 
-          
-         $j('.info').slideToggle("slow");
-
-      });
+		$j('.btn-info').click(function(){ 
+			$j('.info').slideToggle("slow");
+		});
+		$j('.btn-remember').click(function(){ 
+			$j('.remember').slideToggle("slow");
+		});
   });
     
 
@@ -575,7 +493,7 @@ $ git checkout gh-pages
       var s=tm.getSeconds();
       m=checkTime(m);
       s=checkTime(s);
-      document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+      document.getElementById('timer').innerHTML=h+":"+m+":"+s;
       t=setTimeout('startTime()',500);
       }
       function checkTime(i)
