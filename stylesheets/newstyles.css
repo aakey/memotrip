@@ -1,4 +1,28 @@
-
+body{
+	background:#FFF url(http://s3.goodfon.ru/image/33625-1920x1200.jpg) 0 0 no-repeat;
+	
+	background-attachment: fixed;
+	background-color: #fff;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.wrapper{
+	background:#fff;
+	border-radius:5px;
+	padding:10px 20px;
+	min-height:800px;
+	
+}
+section, header{
+	overflow:hidden;
+	position:static;
+}
+article{
+	 border-radius:0 5px 0 5px;
+}
+section article:nth-child(odd) {
+background: #efefef;
+}
 .question{
   overflow:hidden;
   margin:0 0 10px 0;
@@ -148,6 +172,7 @@
 .board_list,
 .gadget_list,
 .notebook_list,
+.tour_list,
 .rain_list
  {display: none;}
 
@@ -159,7 +184,7 @@
 }
 section{
 	margin:0;
-	width:550px;
+	width:620px;
 }
 .section h3{
 	background:#77c34a;
@@ -172,22 +197,31 @@ h3{
 section p{
 	margin:0;
 	padding:0;
-	font-size:13px;
+	font-size:14px;
 }
 
 
 
 .list{
-	width:448px;
+	width:518px;
 	
 	border-right:2px solid #77c34a;
-	border-radius:5px;
+	border-radius:0 5px 5px 0;
 	
 	//padding:0 0 0 5px;
+	
+	overflow:hidden;
 }
 .list p{
 	padding: 0 0 0 5px;
 	border-bottom:1px solid #fff;
+	border-right:1px solid #fff;
+	float:left;
+	width:253px;
+	color:#555;
+}
+.list div{
+	
 }
 .title span{ 
 	float:left;
@@ -196,7 +230,7 @@ section p{
 	padding: 0 0 0 5px;
 }
 .triangle{
-	width: 0;
+	width: 0; 
     height: 0;
     border-top: 3px solid transparent;
     border-left: 6px solid #77c34a;
@@ -231,10 +265,12 @@ section p{
 	//margin:0 0 5px 0;
 	//background:#fafafa;
 	font-size:12px;
-	color:#aaa;
+	color:#999;
 }
 header .category h4{
-	margin:15px 0 10px 0;
+	margin:10px 0 2px 0;
 }
-
+strong{
+color:#666;
+}
 
