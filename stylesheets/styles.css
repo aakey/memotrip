@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  padding:20px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -48,6 +48,7 @@ a small {
 .wrapper {
   width:860px;
   margin:0 auto;
+  overflow:hidden;
 }
 
 blockquote {
@@ -95,74 +96,68 @@ img {
   max-width:100%;
 }
 
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-}
-
-header ul {
-  list-style:none;
-  height:40px;
-  
-  padding:0;
-  
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
-}
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
-}
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
-}
-
 strong {
   color:#222;
   font-weight:700;
 }
 
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
+header {
+  width:220px;
+  float:left;
+  position:fixed;
 }
 
-header ul li + li + li {
-  border-right:none;
-  width:89px;
+header .category h4{
+	border-bottom:1px solid #dadada;
+	font-weight:normal;
+	color:#77c34a;
+	font-size:11px;
+	margin:20px 0 10px 0;
+	padding:0;
 }
 
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
+header .check{
+	 width:12px;
+	 height:12px;
+	 border:2px solid #ccc;
+	 float:right;
+	 background:#fff;
+	 border-radius:2px;
 }
+
+header .check:hover{
+	 cursor:hand;
+	 cursor:pointer;
+}
+
+
 
 section {
   width:500px;
   float:right;
   padding-bottom:50px;
+}
+
+article{
+	display: table;
+	width:100%;
+	overflow:hidden;
+	background: #fdfdfd;
+	margin: 0 0 2px 0;
+}
+
+article .title{
+	position:relative;
+	background:#fff;
+	display: table-cell;
+    vertical-align: middle;
+	width:90px;
+	padding:0 10px 0 0;
+}
+
+article:nth-child(odd) {
+	background: #fafafa;
+	//background: rgba(50,50,50,0.1);
 }
 
 small {
