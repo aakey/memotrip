@@ -24,26 +24,36 @@
 		</div>
         <!--<h1>MEMOTRIP</h1>-->
 		<div class="category">
-			<h4>Вид отдыха</h4>
+			<h4>Цивилизованный отдых</h4>
 			
 			<div class="q">
 			  <div class="abroad"></div>
-			  <span>Едем заграницу?</span>
+			  <span>Еду заграницу</span>
 			  <div class="check ch1"></div>
 			</div>
 			<div class="q">
+			  <div class="abroad"></div>
+			  <span>Еду в тур</span>
+			  <div class="check ch15"></div>
+			</div>
+		</div>	
+		
+		<div class="category">
+			<h4>Отдых на природе</h4>		
+			<div class="q">
 			  <div class="nature"></div>
-			  <span>Едем на природу?</span>
+			  <span>Еду на природу</span>
 			  <div class="check ch2"></div>
 			</div>
+		
+			<div class="q">
+			  <div class="camp"></div>
+			  <span>C ночевкой</span>
+			  <div class="check ch3"></div>
 			</div>
-        <div class="q">
-		  <div class="camp"></div>
-          <span>C ночевкой?</span>
-          <div class="check ch3"></div>
-        </div>
+		</div>
 		<div class="category">
-			<h4>Погода</h4>
+			<h4>Прогноз погоды</h4>
 			<div class="q">
 			 <div class="cold"></div>
 			  <span>Будет холодно?</span>
@@ -63,48 +73,64 @@
 			</div>
 		</div>
 		<div class="category">
-		<h4>Активный отдых</h4>
+		<h4>Возле воды</h4>
 			<div class="q">
 			 <div class="swim"></div>
-			  <span>Будете купаться?</span>
+			  <span>Буду купаться</span>
 			  <div class="check ch6"></div>
 			</div>
 			
 			<div class="q">
 			<div class="fish"></div>
-			  <span>Будете рыбачить?</span>
+			  <span>Буду рыбачить</span>
 			  <div class="check ch7"></div>
 			</div>
-			
+		</div>	
+		<div class="category">
+			<h4>В горах</h4>
+			<div class="q">
+				<div class="board"></div>
+			  <span>Буду кататься на сноуборде</span>
+			  <div class="check ch10"></div>
+			</div>
+		</div>
+		<div class="category">
+			<h4>Активный отдых</h4>
 			<div class="q">
 				<div class="hunt"></div>
-			  <span>Будете охотиться?</span>
+			  <span>Буду охотиться</span>
 			  <div class="check ch8"></div>
 			</div>
 			
 			<div class="q">
 			<div class="drink"></div>
-			  <span>Будете пить?</span>
+			  <span>Буду пить</span>
 			  <div class="check ch9"></div>
 			</div>
-			
+		</div>
+		<div class="category">
+			<h4>Гаджеты</h4>
 			<div class="q">
-				<div class="board"></div>
-			  <span>Покатушки на сноуборде?</span>
-			  <div class="check ch10"></div>
+				<div class="gadget"></div>
+			  <span>Захвачу планшет</span>
+			  <div class="check ch12"></div>
+			</div>
+			<div class="q">
+				<div class="notebook"></div>
+				<span>Захвачу ноутбук</span>
+				<div class="check ch14"></div>
+			</div>
+        </div>
+		<div class="category">
+			<h4>Беру аптечку</h4>
+			<div class="q">
+				<div class="firstaid"></div>
+			  <span>Аптечка</span>
+			  <div class="check ch11"></div>
 			</div>
 		</div>
-		<div class="q">
-			<div class="firstaid"></div>
-          <span>Аптечка</span>
-          <div class="check ch11"></div>
-        </div>
 		
-		<div class="q">
-			<div class="gadget"></div>
-          <span>Захвачу планшет</span>
-          <div class="check ch12"></div>
-        </div>
+		
         
       </header>
        <section>
@@ -112,7 +138,7 @@
             <p style="font-size:14px; color:#666;"><strong>Хоп-хоп!</strong> Не забывай свои вещи, когда едешь на отдых - используй MEMOTRIP.</p>
             <p>Внизу базовый набор предметов, которые необходимы для небольшой поездки без ночевки.
             Используйте фильтры слева, чтобы подобрать вещи для именно для своего путешествия.</p>
-			<p style="font-size:13px; color:#666;"> Вопросы и пожелания на почту <a href="mailto:memotrip@gmail.com">memotrip@gmail.com</a></p>
+			<p style="font-size:13px; color:#666;"> Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></p>
           </div>
 
 			<article>
@@ -222,6 +248,11 @@
 					<div class="gadget_list">
 						<p>Планшет</p>
 						<p>Зарядка для планшета</p>
+					</div>
+					
+					<div class="notebook_list">
+						<p>Ноутбук</p>
+						<p>Зарядка для ноутбука</p>
 					</div>
 				</div>
 				<div class="title">
@@ -401,7 +432,7 @@ $ git checkout gh-pages
  -->
 </section>
 	<footer>
-		<p>This project is maintained by <a href="https://github.com/aakey">aakey</a></p>
+		<p>This project is maintained by <a href="https://github.com/aakey">sibotaxis</a></p>
 		<p><small>Hosted on GitHub Pages</small></p>
 	</footer>
 </div>
@@ -467,6 +498,14 @@ $ git checkout gh-pages
 	$j(".ch13").click(function () {
         $j(this).toggleClass("active");
         $j(".rain_list").slideToggle("slow");
+	});
+	$j(".ch14").click(function () {
+        $j(this).toggleClass("active");
+        $j(".notebook_list").slideToggle("slow");
+	});
+	$j(".ch15").click(function () {
+        $j(this).toggleClass("active");
+        $j(".tour_list").slideToggle("slow");
 	});
 
 
