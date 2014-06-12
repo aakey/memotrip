@@ -23,41 +23,33 @@
 			<img src="image/logo.png" alt="" />
 		</div>
         <!--<h1>MEMOTRIP</h1>-->
+    <div class="intro">
+    	Выберите вид путешествия, а затем нужные подкатегории, чтоб получить список в дорогу
+    </div>
 	<div class="q finish">
-		  <div class="abroad"></div>
-		  <span style="font-size:14px;">Отдых на природе</span>
-		  <div class="check mm01"></div>
+		 <div class="mm01"></div>
+		  <span>Отдых на природе</span>
 	</div>
+
 	<div class="q start">
-		  <div class="abroad"></div>
-		  <span style="font-size:14px;">Цивилизованный отдых</span>
-		  <div class="check mm02"></div>
+		  <div class="mm02"></div>
+		  <span>Цивилизованный отдых</span>
 	</div>
 		
 	<div class="natural">
+		
 		<div class="category">
-			<h4>Цивилизованный отдых</h4>
-			
+			<h4>Отдых на природе</h4>	
 			<div class="q">
 			  <div class="abroad"></div>
 			  <span>Еду заграницу</span>
 			  <div class="check ch1"></div>
-			</div>
-			<div class="q">
-			  <div class="abroad"></div>
-			  <span>Еду в тур</span>
-			  <div class="check ch15"></div>
-			</div>
-		</div>	
-		
-		<div class="category">
-			<h4>Отдых на природе</h4>		
+			</div>	
 			<div class="q">
 			  <div class="nature"></div>
 			  <span>Еду на природу</span>
 			  <div class="check ch2"></div>
 			</div>
-		
 			<div class="q">
 			  <div class="camp"></div>
 			  <span>C ночевкой</span>
@@ -99,14 +91,6 @@
 			</div>
 		</div>	
 		<div class="category">
-			<h4>В горах</h4>
-			<div class="q">
-				<div class="board"></div>
-			  <span>Буду кататься на сноуборде</span>
-			  <div class="check ch10"></div>
-			</div>
-		</div>
-		<div class="category">
 			<h4>Активный отдых</h4>
 			<div class="q">
 				<div class="hunt"></div>
@@ -121,26 +105,18 @@
 			</div>
 		</div>
 		<div class="category">
-			<h4>Гаджеты</h4>
+			<h4>Дополнительно</h4>
 			<div class="q">
-				<div class="gadget"></div>
+				<div class="ipad"></div>
 			  <span>Захвачу планшет</span>
 			  <div class="check ch12"></div>
 			</div>
 			<div class="q">
-				<div class="notebook"></div>
-				<span>Захвачу ноутбук</span>
-				<div class="check ch14"></div>
-			</div>
-        </div>
-		<div class="category">
-			<h4>Беру аптечку</h4>
-			<div class="q">
-				<div class="firstaid"></div>
+				<div class="plus"></div>
 			  <span>Аптечка</span>
 			  <div class="check ch11"></div>
 			</div>
-		</div>
+        </div>
 	</div>
 	
 	
@@ -638,13 +614,13 @@ $ git checkout gh-pages
         $j(".tour_list").fadeToggle("slow");
 	});
 	
-	$j(".mm01").click(function () {
-        $j(this).toggleClass("active");
+	$j(".finish").click(function () {
+        $j(this).toggleClass("minus");
         $j(".natural").slideToggle("slow");
 		$j(".start").slideToggle("slow");
 	});
-	$j(".mm02").click(function () {
-        $j(this).toggleClass("active");
+	$j(".start").click(function () {
+        $j(this).toggleClass("minus");
         $j(".civil").slideToggle("slow");
         $j(".finish").slideToggle("slow");
 	});

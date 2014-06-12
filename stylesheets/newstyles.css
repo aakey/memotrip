@@ -5,12 +5,14 @@ body{
 	background-color: #fff;
 	background-position: center top;
 	background-repeat: no-repeat;
+
 }
 .wrapper{
 	background:#fff;
 	border-radius:5px;
 	padding:10px 20px;
 	min-height:800px;
+	border:10px solid #77c34a;
 	
 }
 section, header{
@@ -82,7 +84,7 @@ background: #efefef;
 }
 
 
-.abroad, .drink, .nature, .fish, .hunt, .board, .cold, .sun, .swim, .camp{
+.abroad, .drink, .nature, .fish, .hunt, .board, .cold, .sun, .swim, .camp, .plus, .ipad, .notebook, .rain{
 	background: url(../image/sprites.png) no-repeat;
 	overflow:hidden;
 	float:left;
@@ -147,6 +149,33 @@ background: #efefef;
 	width: 16px;
 	height: 16px;
 }
+.notebook{
+	background-position: -650px 0;
+	width: 16px;
+	height: 16px;
+}
+
+.plus{
+	background-position: -600px 0;
+	width: 16px;
+	height: 16px;
+}
+
+.rain{
+	background-position: -550px 0;
+	width: 16px;
+	height: 16px;
+}
+
+.ipad{
+	background-position: -500px 0;
+	width: 16px;
+	height: 16px;
+}
+
+
+
+
 .btn{
 	background-color:#999;
 	color:#000;
@@ -276,4 +305,35 @@ header .category h4{
 strong{
 color:#666;
 }
-
+.start span, .finish span{
+	font-size: 14px;
+	font-weight: bold;
+	color: #77c34a;
+	border-bottom: 2px dashed #77c34a ;
+}
+.start, .finish{
+background: #fff url(../image/plus.jpg) 0 0 no-repeat;
+padding: 0 0 10px 30px;
+cursor: pointer;
+}
+.minus{
+background: #fff url(../image/minus.jpg) 0 0 no-repeat;
+}
+.logo{
+	margin: 0 0 20px 0;
+}
+.intro{
+	font-size: 11px;
+	border: 2px solid #77c34a;
+	border-radius: 5px;
+	padding: 5px 5px 5px 48px;
+	//text-align: justify;
+	line-height: 13px;
+	 position: relative;
+	 margin: 0 0 20px 0;
+	 background: #fff url(../image/arrow.jpg) 0 0 no-repeat;
+}
+.start span:hover, .finish span:hover{
+	color: #555;
+	border-bottom: 2px dashed #555 ;
+}
