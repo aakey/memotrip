@@ -147,6 +147,7 @@
 .camp_list,
 .board_list,
 .gadget_list,
+.notebook_list,
 .rain_list
  {display: none;}
 
@@ -227,11 +228,13 @@ section p{
 }
 .q{
 	overflow:hidden;
-	margin:0 0 5px 0;
+	//margin:0 0 5px 0;
 	//background:#fafafa;
 	font-size:12px;
 	color:#aaa;
 }
-
+header .category h4{
+	margin:15px 0 10px 0;
+}
 
 
