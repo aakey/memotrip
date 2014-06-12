@@ -150,8 +150,6 @@
 .rain_list
  {display: none;}
 
-.logo{
-}
 #timer{
 	float:right;
 	color:#77c34a;
@@ -233,12 +231,6 @@ section p{
 	//background:#fafafa;
 	font-size:12px;
 	color:#aaa;
-}
-
-.active{
-	background: url(http://abali.ru/wp-content/uploads/2011/03/galochka-check_16x16.png) 1px 1px no-repeat;
-	background: url(../image/mark.png) 1px 1px no-repeat;
-	border:2px solid #77c34a;
 }
 
 
