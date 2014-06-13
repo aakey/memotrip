@@ -1,10 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:20px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:300;
+  padding:20px 0 0 0;
+  
+  background:#FFF url(http://s3.goodfon.ru/image/33625-1920x1200.jpg) 0 0 no-repeat;
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +55,12 @@ a small {
   width:860px;
   margin:0 auto;
   overflow:hidden;
+
+  background:#fff;
+  border-radius:5px;
+  padding:10px 20px;
+  min-height:800px;
+  border:10px solid #77c34a;
 }
 
 blockquote {
@@ -83,46 +95,59 @@ th, td {
   border-bottom:1px solid #e5e5e5;
 }
 
-dt {
-  color:#444;
-  font-weight:700;
-}
-
-th {
-  color:#444;
-}
-
 img {
   max-width:100%;
 }
 
 strong {
-  color:#222;
+  color:#666;
   font-weight:700;
 }
+
 
 header {
   width:220px;
   float:left;
-  position:fixed;
+  //position:fixed;
 }
 
-header .category h4{
-	border-bottom:1px solid #dadada;
-	font-weight:normal;
-	color:#77c34a;
-	font-size:11px;
-	margin:20px 0 10px 0;
-	padding:0;
+header .logo{
+  margin: 0 0 20px 0;
+}
+
+header .intro{
+  font-size: 11px;
+  padding: 2px 2px 2px  16px;
+  line-height: 13px;
+  margin: 0 0 20px 0;
+  background: #fafafa url(../image/arrow.jpg) 0 0 no-repeat;
+  border-radius: 5px;
+}
+header .category{
+  padding: 0 10px 10px 10px;
+  overflow: hidden;
+}
+
+header .subcat{
+  margin:10px 0;
+}
+
+header .subcat__title{
+  border-bottom:1px solid #dadada;
+  font-weight:normal;
+  color:#77c34a;
+  font-size:11px;
+  margin:10px 10px 3px 10px;
+  padding:0;
 }
 
 header .check{
-	 width:12px;
-	 height:12px;
-	 border:2px solid #ccc;
-	 float:right;
-	 background:#fff;
-	 border-radius:2px;
+  width:12px;
+  height:12px;
+  border:2px solid #ccc;
+  float:right;
+  background:#fff;
+  border-radius:2px;
 }
 
 header .check:hover{
@@ -136,10 +161,76 @@ header .active{
 }
 
 
+
+
+
+header .visible{
+  background: #77c34a;
+  color: #fff;
+  border-bottom: 2px solid #77c34a;
+  cursor: text !important;
+}
+header .cat{
+  background: #fff;
+  border: 2px solid #77c34a;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #77c34a;
+}
+header .q{
+  overflow:hidden;
+  font-size:13px;
+  color:#888;
+}
+header .mm01, header .mm02{
+  padding:0 0 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 section {
-  width:500px;
+  width:620px;
   float:right;
   padding-bottom:50px;
+  margin:0;
+}
+
+section p{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+
+section .links{
+  margin: 2px 0 10px 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+section .instruction{
+  margin:0 0 21px 0;
+}
+section .instruction p{
+  font-size:12px;
+  color:#77c34a;
+}
+section .btn-info {
+  border-bottom:1px dashed #666;
+  float: right;
+}
+section .btn-remember{
+  border-bottom:1px dashed #666;
+  float: left;
+}
+section .desc{
+  padding:10px 0 0 0;
+}
+section .info, .remember{
+  display:none;
+  
+}
+section .info h3{
+  margin:20px 0 5px 0;
 }
 
 article{
@@ -151,18 +242,55 @@ article{
 }
 
 article .title{
-	position:relative;
-	background:#fff;
-	display: table-cell;
-    vertical-align: middle;
-	width:90px;
-	padding:0 10px 0 0;
+  position:relative;
+  background:#fff;
+  display: table-cell;
+  vertical-align: middle;
+  width:90px;
+  padding:0 10px 0 0;
 }
 
 article:nth-child(odd) {
-	background: #fafafa;
+	background: #efefef;
 	//background: rgba(50,50,50,0.1);
 }
+
+article .list{
+  width:518px;
+  border-right:2px solid #77c34a;
+  border-radius:0 5px 5px 0;
+  //padding:0 0 0 5px;
+  overflow:hidden;
+}
+article .list p{
+  padding: 0 0 0 5px;
+  border-bottom:1px solid #fff;
+  border-right:1px solid #fff;
+  float:left;
+  width:253px;
+  color:#222;
+}
+article .title .triangle{
+  width: 0; 
+  height: 0;
+  border-top: 3px solid transparent;
+  border-left: 6px solid #77c34a;
+  border-bottom: 3px solid transparent;
+
+  display: table-cell;
+  vertical-align: middle;
+  position:relative;
+  right:2px;
+  top:7px;
+  float:left;
+}
+article .title span{ 
+  float:left;
+  color:#77c34a;
+  font-weight:bold;
+  padding: 0 0 0 5px;
+}
+
 
 small {
   font-size:11px;
@@ -180,6 +308,108 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+
+
+#timer{
+  float:right;
+  color:#77c34a;
+  font-weight:bold;
+  font-size:16px;
+  height: 24px;
+  width: 63px;
+}
+
+.abroad, 
+.drink, 
+.nature, 
+.fish, 
+.hunt, 
+.board, 
+.cold, 
+.sun, 
+.swim, 
+.camp, 
+.medicine, 
+.tablet, 
+.notebook, 
+.tourism, 
+.photo, 
+.mount, 
+.rain{
+  background: url(../image/sprites.png) no-repeat;
+  overflow:hidden;
+  //float:left;
+  margin: 0 10px 3px 10px;
+  //width: 16px;
+  height: 16px;
+  font-size: 13px;
+  color: #777;
+  padding: 0 0 0 20px
+}
+
+.civil-list,
+.civil,
+.hide,
+.abroad_list,
+.camp_list, 
+.cold_list, 
+.sun_list,
+.rain_list, 
+.tourism_list, 
+.mount_list, 
+.swim_list,   
+.fish_list,   
+.hunt_list,  
+.tablet_list,
+.medicine_list,
+.board_list,
+.notebook_list,
+.tour_list
+{display: none;}
+
+.abroad{
+  background-position: 0 0;
+}
+.nature{
+  background-position: -50px 0;
+}
+.camp{
+  background-position: -100px 0;
+}
+.cold{
+  background-position: -150px 0;
+}
+.sun{
+  background-position: -200px 0;
+}
+.fish{
+  background-position: -250px 0;
+}
+.hunt{
+  background-position: -300px 0;
+}
+.drink{
+  background-position: -350px 0;
+}
+.board{
+  background-position: -400px 0;
+}
+.swim{
+  background-position: -450px 0;
+}
+.tablet{
+  background-position: -500px 0;
+}
+.rain{
+  background-position: -550px 0;
+}
+.medicine{
+  background-position: -600px 0;
+}
+.notebook{
+  background-position: -650px 0;
 }
 
 @media print, screen and (max-width: 960px) {
