@@ -117,10 +117,10 @@ header .logo{
 
 header .intro{
   font-size: 11px;
-  padding: 2px 2px 2px  16px;
+  padding: 2px 2px 2px  24px;
   line-height: 13px;
   margin: 0 0 20px 0;
-  background: #fafafa url(../image/arrow.jpg) 0 0 no-repeat;
+  background: #fafafa url(../image/arrow.png) 0 3px no-repeat;
   border-radius: 5px;
 }
 header .category{
@@ -216,11 +216,11 @@ section .instruction p{
 }
 section .btn-info {
   border-bottom:1px dashed #666;
-  float: right;
+  float: left;
 }
 section .btn-remember{
   border-bottom:1px dashed #666;
-  float: left;
+  float: right;
 }
 section .desc{
   padding:10px 0 0 0;
@@ -328,6 +328,7 @@ footer {
 .hunt, 
 .board, 
 .cold, 
+.tour, 
 .sun, 
 .swim, 
 .camp, 
@@ -354,6 +355,7 @@ footer {
 .hide,
 .abroad_list,
 .camp_list, 
+.photo_list, 
 .cold_list, 
 .sun_list,
 .rain_list, 
@@ -369,47 +371,59 @@ footer {
 .tour_list
 {display: none;}
 
-.abroad{
-  background-position: 0 0;
+.tour{
+	background-position: 0 -850px;
 }
-.nature{
-  background-position: -50px 0;
+.photo{
+	background-position: 0 -750px ;
 }
-.camp{
-  background-position: -100px 0;
-}
-.cold{
-  background-position: -150px 0;
-}
-.sun{
-  background-position: -200px 0;
-}
-.fish{
-  background-position: -250px 0;
-}
-.hunt{
-  background-position: -300px 0;
-}
-.drink{
-  background-position: -350px 0;
-}
-.board{
-  background-position: -400px 0;
-}
-.swim{
-  background-position: -450px 0;
-}
-.tablet{
-  background-position: -500px 0;
+.tourism{
+	background-position: 0 -800px ;
 }
 .rain{
-  background-position: -550px 0;
+	background-position: 0 -600px ;
+}
+.sun{
+	background-position: 0 -550px ;
+}
+.swim{
+	background-position: 0 -500px ;
+}
+.tablet{
+	background-position: 0 -450px ;
+}
+.abroad{
+	background-position: 0 -400px ;
+}
+.board{
+	background-position: 0 -350px ;
+}
+.camp{
+	background-position: 0 -300px ;
+}
+.drink{
+	background-position: 0 -250px ;
+}
+.fish{
+	background-position: 0 -200px ;
+}
+.hunt{
+	background-position: 0 -150px ;
 }
 .medicine{
-  background-position: -600px 0;
+	background-position: 0 -100px ;
+}
+.mount{
+	background-position: 0 -50px ;
 }
 .notebook{
-  background-position: -650px 0;
+	background-position: 0 0;
+}
+.cold{
+	background-position: 0 -650px ;
+}
+.arrow{
+	background-position: 0 -700px;
 }
 
 @media print, screen and (max-width: 960px) {
