@@ -115,14 +115,30 @@ header .logo{
   margin: 0 0 20px 0;
 }
 
-header .intro{
-  font-size: 11px;
-  padding: 2px 2px 2px  24px;
-  line-height: 13px;
+.intro{
+  font-size: 13px;
+  padding: 7px 7px 7px 48px;
   margin: 0 0 20px 0;
-  background: #fafafa url(../image/arrow.png) 0 3px no-repeat;
+  background: #77c34a url(../image/list.png) 10px 9px no-repeat;
   border-radius: 5px;
+  font-weight:bold;
+  color:#fff;
+   line-height:16px;
+   position:relative;
 }
+.intro .show{
+	width: 0; 
+	height: 0;
+	border-left: 7px solid transparent;
+	border-top: 9px solid #77c34a;
+	border-right: 7px solid transparent;
+
+	position:absolute;
+	left:17px;
+	top:44px;
+	float:left;
+}
+
 header .category{
   padding: 0 10px 10px 10px;
   overflow: hidden;
@@ -189,6 +205,10 @@ header .mm01, header .mm02{
   font-weight: bold;
 }
 
+.mm01:hover, .mm02:hover{
+ background: #77c34a;
+ color:#fff
+}
 section {
   width:620px;
   float:right;
@@ -265,10 +285,11 @@ article .list{
 article .list p{
   padding: 0 0 0 5px;
   border-bottom:1px solid #fff;
-  border-right:1px solid #fff;
-  float:left;
-  width:253px;
+  //border-right:1px solid #fff;
+  //float:left;
+ // width:253px;
   color:#222;
+  line-height:19px;
 }
 article .title .triangle{
   width: 0; 
@@ -336,7 +357,9 @@ footer {
 .tablet, 
 .notebook, 
 .tourism, 
-.photo, 
+.photo,
+.girl,
+.axe,
 .mount, 
 .rain{
   background: url(../image/sprites.png) no-repeat;
@@ -362,10 +385,12 @@ footer {
 .tourism_list, 
 .mount_list, 
 .swim_list,   
+.girl_list,   
 .fish_list,   
 .hunt_list,  
 .tablet_list,
 .medicine_list,
+.axe_list,
 .board_list,
 .notebook_list,
 .tour_list
@@ -424,6 +449,9 @@ footer {
 }
 .arrow{
 	background-position: 0 -700px;
+}
+.girl{
+	background-position: 0 -900px;
 }
 
 @media print, screen and (max-width: 960px) {

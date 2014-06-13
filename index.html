@@ -24,10 +24,6 @@
 		</div>
 
         <!--<h1>MEMOTRIP</h1>-->
-	    <div class="intro">
-	    	Используйте фильтры. 
-	    	По умолчанию выбран отдых на природе. 
-	    </div>
 
 		<div class="cat">
 			<div class="mm01 visible">Отдых на природе</div>
@@ -35,13 +31,13 @@
 			<div class="cat__nat subcat">
 				
 				<h4 class="subcat__title">Отдых на природе</h4>	
-				<div class="abroad">
-				  Еду заграницу
-				  <div class="check n01"></div>
-				</div>
 				<div class="camp">
 					C ночевкой
 					<div class="check n02"></div>
+				</div>
+				<div class="girl">
+					Я девушка
+				  	<div class="check n01"></div>
 				</div>
 			
 
@@ -177,7 +173,11 @@
 			<p> Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></p>
           </div>
 
-		  
+		<div class="intro">
+			<div class="show"></div>
+	    	<p>Это базовый список вещей для небольшого путешествия без ночевки.</p>
+			<p>По умолчанию выбрана категория  "Отдых на природе".</p>
+	    </div>  
 		<div class="natural-list">
 			<article>
 				<div class="list">
@@ -186,14 +186,7 @@
 						<p>Ключи от дома</p>
 					</div>
 					<!-- за границу -->
-					<div class="abroad_list">  
-						<p>Загранпаспорт</p>
-						<p>Виза</p>
-						<p>Распечатка брони в гостинице</p>
-						<p>Справка о доходах</p>
-						<p>Документы в электронном варианте</p>
-						<p>Деньги страны</p>
-					</div>
+
 				</div>
 				<div class="title">
 					<div class="triangle"></div>
@@ -280,22 +273,18 @@
 				<div class="list">
 					<!-- ночевка -->
 					<div class="main">  
-						<p>Смартфон</p>
-						<p>Зарядка для смартфона</p>
+						<p>Смартфон + зарядное</p>
 					</div>
 					
 					<div class="tablet_list">
-						<p>Планшет</p>
-						<p>Зарядка для планшета</p>
+						<p>Планшет + зарядное</p>
 					</div>
 					
 					<div class="notebook_list">
-						<p>Ноутбук</p>
-						<p>Зарядка для ноутбука</p>
+						<p>Ноутбук + зарядное</p>
 					</div>
 					<div class="photo_list">
-						<p>Фотоаппарат</p>
-						<p>Зарядка для фото/батарейки</p>
+						<p>Фотоаппарат + зарядное/батарейки</p>
 					</div>
 				</div>
 				<div class="title">
@@ -308,6 +297,7 @@
 				<div class="list">
 					<div class="main">
 						<p>Салфетки влажные</p>
+						<p>Расческа</p>
 					</div> 
 					<div class="camp_list">
 						<p>Зубная паста/щетка</p>
@@ -315,7 +305,16 @@
 						<p>Шампунь</p>
 						<p>Мыло жидкое</p>
 						<p>Туалетная бумага</p>
-					</div>  
+					</div>
+					<div class="girl_list">
+						<p>Прокладки/тампоны</p>
+						<p>Средство для умывания</p>
+						<p>Спонжики</p>
+						<p>Зеркальце</p>
+						<p>Крема</p>
+						<p>Ножнички</p>
+						<p>Гигиеническая помада</p>
+					</div> 
 				</div>
 				<div class="title">
 					<div class="triangle"></div>
@@ -770,7 +769,7 @@ $ git checkout gh-pages
 
      $j(".n01").click(function () {
         $j(this).toggleClass("active");
-        $j(".abroad_list").fadeToggle("slow");
+        $j(".girl_list").fadeToggle("slow");
       }); 
      $j(".n02").click(function () {
         $j(this).toggleClass("active");
@@ -887,6 +886,11 @@ $ git checkout gh-pages
         $j(".tour_list").fadeToggle("slow");
 	});
 	
+	$j(".check").click(function () {
+        $j(".intro").slideUp("slow");
+	});
+
+
 	$j(".mm01").click(function () {
         $j(this).addClass("visible");
         $j(".cat__nat").slideDown("slow");
