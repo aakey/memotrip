@@ -123,26 +123,9 @@ header .intro{
   background: #fafafa url(../image/arrow.jpg) 0 0 no-repeat;
   border-radius: 5px;
 }
-
-header .cat{
-  background: #fff;
-  border: 2px solid #77c34a;
-  border-radius: 5px;
-  margin: 0 0 10px 0;
-  font-size: 14px;
-  color: #77c34a;
-}
-header .mm01, header .mm02{
-  padding:0 0 0 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-header .cat .visible{
-  background: #77c34a;
-  color: #fff;
-  border-bottom: 2px solid #77c34a;
-  cursor: text !important;
+header .category{
+  padding: 0 10px 10px 10px;
+  overflow: hidden;
 }
 
 header .subcat{
@@ -178,6 +161,34 @@ header .active{
 }
 
 
+
+
+
+header .visible{
+  background: #77c34a;
+  color: #fff;
+  border-bottom: 2px solid #77c34a;
+  cursor: text !important;
+}
+header .cat{
+  background: #fff;
+  border: 2px solid #77c34a;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #77c34a;
+}
+header .q{
+  overflow:hidden;
+  font-size:13px;
+  color:#888;
+}
+header .mm01, header .mm02{
+  padding:0 0 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 section {
   width:620px;
   float:right;
@@ -196,7 +207,6 @@ section .links{
   font-size: 12px;
   overflow: hidden;
 }
-
 section .instruction{
   margin:0 0 21px 0;
 }
