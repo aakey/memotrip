@@ -58,52 +58,53 @@
 
      $j(".c01").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.abroad_list").fadeToggle("slow");
+        $j(".civil-list .abroad_list").fadeToggle("slow");
       }); 
      $j(".c02").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.tour_list").fadeToggle("slow");
+        $j(".civil-list .tour_list").fadeToggle("slow");
       });
       $j(".c03").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.cold_list").fadeToggle("slow");
+        $j(".civil-list .cold_list").fadeToggle("slow");
       });
       $j(".c04").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.sun_list").fadeToggle("slow");
+        $j(".civil-list  .sun_list").fadeToggle("slow");
       });
       $j(".c05").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.rain_list").fadeToggle("slow");
+        $j(".civil-list .rain_list").fadeToggle("slow");
       });
       $j(".c06").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.swim_list").fadeToggle("slow");
+        $j(".civil-list .swim_list").fadeToggle("slow");
       });
       $j(".c07").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.board_list").fadeToggle("slow");
+        $j(".civil-list .board_list").fadeToggle("slow");
       });
       $j(".c08").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.swim_list").fadeToggle("slow");
+        $j(".civil-list  .tablet_list").fadeToggle("slow");
       });
-      $j(".c09").click(function () {
+	  $j(".c09").click(function () {
         $j(this).toggleClass("active");
-        $j(".tablet_list").fadeToggle("slow");
+        $j(".civil-list  .notebook_list").fadeToggle("slow");
       });
 	  $j(".c10").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.notebook_list").fadeToggle("slow");
+        $j(".civil-list .photo_list").fadeToggle("slow");
       });
 	  $j(".c11").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.photo_list").fadeToggle("slow");
+        $j(".civil-list .medicine_list").fadeToggle("slow");
       });
 	  $j(".c12").click(function () {
         $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.medicine_list").fadeToggle("slow");
+        $j(".civil-list .girl_list").fadeToggle("slow");
       });
+	  
 
 	$j(".check").click(function () {
         $j(".start").slideUp("slow");
