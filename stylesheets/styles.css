@@ -60,7 +60,7 @@ a small {
   border-radius:5px;
   padding:10px 20px;
   min-height:800px;
-  border:10px solid #77c34a;
+  border:10px solid #efefef;
 }
 
 blockquote {
@@ -118,7 +118,7 @@ header .logo{
 .intro{
   font-size: 13px;
   padding: 7px 7px 7px 48px;
-  margin: 0 0 20px 0;
+  margin: 20px 0;
   background: #77c34a url(../image/list.png) 10px 9px no-repeat;
   border-radius: 5px;
   font-weight:bold;
@@ -126,17 +126,19 @@ header .logo{
    line-height:16px;
    position:relative;
 }
-.intro .show{
-	width: 0; 
-	height: 0;
-	border-left: 7px solid transparent;
-	border-top: 9px solid #77c34a;
-	border-right: 7px solid transparent;
 
-	position:absolute;
-	left:17px;
-	top:44px;
-	float:left;
+.intro:after {
+	top: 44px;
+	left: 14px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(119, 195, 74, 0);
+	border-top-color: #77c34a;
+	border-width: 9px;
 }
 
 header .category{
@@ -204,7 +206,6 @@ header .mm01, header .mm02{
   cursor: pointer;
   font-weight: bold;
 }
-
 .mm01:hover, .mm02:hover{
  background: #77c34a;
  color:#fff
@@ -227,9 +228,7 @@ section .links{
   font-size: 12px;
   overflow: hidden;
 }
-section .instruction{
-  margin:0 0 21px 0;
-}
+
 section .instruction p{
   font-size:12px;
   color:#77c34a;
@@ -242,9 +241,7 @@ section .btn-remember{
   border-bottom:1px dashed #666;
   float: right;
 }
-section .desc{
-  padding:10px 0 0 0;
-}
+
 section .info, .remember{
   display:none;
   
@@ -269,6 +266,20 @@ article .title{
   width:90px;
   padding:0 10px 0 0;
 }
+article .title:after {
+	left: 0px;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(119, 195, 74, 0);
+	border-left-color: #77c34a;
+	border-width: 3px;
+	margin:-4px 0 0 0;
+}
 
 article:nth-child(odd) {
 	background: #efefef;
@@ -291,6 +302,7 @@ article .list p{
   color:#222;
   line-height:19px;
 }
+
 article .title .triangle{
   width: 0; 
   height: 0;
@@ -309,7 +321,7 @@ article .title span{
   float:left;
   color:#77c34a;
   font-weight:bold;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 10px;
 }
 
 
@@ -375,7 +387,7 @@ footer {
 
 .civil-list,
 .civil,
-.hide,
+.change,
 .abroad_list,
 .camp_list, 
 .photo_list, 

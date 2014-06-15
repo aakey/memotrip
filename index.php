@@ -173,12 +173,48 @@
             <p><strong>Хоп-хоп!</strong> MEMOTRIP - конструктор списка вещей для путешественников.</p>
 			<p> Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></p>
           </div>
+		
+			<div class="info" >
+				<h3>Привет путешественникам.</h3>
+				<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить.</p>
 
+				<h3>Главное - не забыть дома голову...</h3>
+				<p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь. В итоге я страдаю.</p>
+				<p>Самый печальный случай, когда я уехал и забыл ключи.</p>
+
+				<h3>Зарождение списка вещей в дорогу - начало эволюции</h3>
+				<p>Эту проблему я решал, составляя список на клочке бумаги, который писал за день до отьезда. Но как оказывалось, делать списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
+				<p>Так зародился электронный прародитель MEMOTRIP.</p>
+
+				<h3>Эволюция или как список стал огромным мутантом</h3>
+				<p>Очень быстро я понял, что универсальный список на все случаи жизни - это утопия. Такого списка нет, не было и не будет. Каждая поездка уникальная, рыбалка на Черкащине разительно отличается от отдыха в пятизвездочном отеле Турции.</p>
+				<p>Небольшой списочек из кусочка бумаги перекочевал в Word. И постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествий, он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым.</p>
+				<p>В этой куче невозможнно было уже разобраться и я  понял, что пора приступать в следующему этапу</p>
+
+				<h3>Вершина эволюции - появление суперсписка</h3>
+				<p>Последняя фаза заключалась в том, что список нужно было перенести на сайт.</p>
+				<p>Это удобно - он всегда под рукой. Это понятно - сайт очень прост и читабелен. И, наконец, это социально - каждый может воспользоваться списком.</p>
+				<p>Вот теперь список необходимых вещей превратился в "бабочку". В МЕМОТРИП вы можете выбрать несколько параметров путешествия и получить более менее внятный набор вещей, которые нужно захватить именно в Ваш круиз. </p>
+				   
+				<h3>Дисклаймер</h3>
+				<p>Внимание! MEMOTRIP - не панацея, а всего лишь помощник. В наборе может не оказаться необходимых вам вещей. Всегда помните об этом и не забывайте эти вещи!</p>
+				<p>Счастливого пути!</p> 
+			</div>
+		
 		<div class="intro">
-			<div class="show"></div>
-	    	<p>Это базовый список вещей для небольшого путешествия без ночевки.</p>
-			<p>По умолчанию выбрана категория  "Отдых на природе".</p>
-	    </div>  
+			<div class="start">
+				<p>Это базовый список вещей для небольшого путешествия без ночевки.</p>
+				<p>По умолчанию выбрана категория  "Отдых на природе".</p>
+			</div>
+			<div class="change">
+				<p>Уррра!Вы изменили базовый список предметов MEMOTRIP.</p>
+				<p>Создайте свой уникальный список и не никогда забывайте свои вещи дома!</p>
+			</div> 
+	    </div> 
+		
+		
+
+		
 		<div class="natural-list">
 			<article>
 				<div class="list">
@@ -186,11 +222,8 @@
 						<p>Паспорт</p>
 						<p>Ключи от дома</p>
 					</div>
-					<!-- за границу -->
-
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Документы</span>
 				</div>
 			</article>
@@ -235,7 +268,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Одежда</span>
 				</div>
 			</article>
@@ -265,8 +297,7 @@
 					</div>  					
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
-					<span>Снаряга</span>
+					<span>Снаряжение</span>
 				</div>
 			</article>
          
@@ -289,7 +320,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Гаджеты</span>
 				</div>
 			</article>
@@ -318,7 +348,6 @@
 					</div> 
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Гигиена</span>
 				</div>
 			</article>
@@ -347,7 +376,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Аптечка</span>
 				</div>
 			</article>
@@ -363,7 +391,6 @@
 					</div>				
 				</div>   
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Посуда</span>
 				</div>
 			</article>
@@ -389,7 +416,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Рыбалка</span>
 				</div>
 			</article>
@@ -404,7 +430,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Скалолазание</span>
 				</div>
 			</article>
@@ -421,7 +446,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Охота</span>
 				</div>
 			</article>
@@ -438,7 +462,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Сноуборд</span>
 				</div>
 			</article>
@@ -464,7 +487,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Документы</span>
 				</div>
 			</article>
@@ -514,7 +536,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Одежда</span>
 				</div>
 			</article>
@@ -545,8 +566,7 @@
 					</div>  					
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
-					<span>Снаряга</span>
+					<span>Снаряжение</span>
 				</div>
 			</article>
          
@@ -573,7 +593,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Гаджеты</span>
 				</div>
 			</article>
@@ -593,7 +612,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Гигиена</span>
 				</div>
 			</article>
@@ -617,7 +635,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Аптечка</span>
 				</div>
 			</article>
@@ -636,7 +653,6 @@
 					</div>  					
 				</div>   
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Посуда</span>
 				</div>
 			</article>
@@ -662,7 +678,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Рыбалка</span>
 				</div>
 			</article>
@@ -679,7 +694,6 @@
 					</div>
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Охота</span>
 				</div>
 			</article>
@@ -696,7 +710,6 @@
 					</div>  
 				</div>
 				<div class="title">
-					<div class="triangle"></div>
 					<span>Сноуборд</span>
 				</div>
 			</article>
@@ -715,42 +728,7 @@
 	</div>
 </div>
 
-<div class="desc">     
- 
-  <div class="info" >
-    <h3>Привет путешественникам.</h3>
-	<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить.</p>
 
-    <h3>Главное - не забыть дома голову...</h3>
-    <p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь. В итоге я страдаю.</p>
-    <p>Самый печальный случай, когда я уехал и забыл ключи.</p>
-
-    <h3>Зарождение списка вещей в дорогу - начало эволюции</h3>
-    <p>Эту проблему я решал, составляя список на клочке бумаги, который писал за день до отьезда. Но как оказывалось, делать списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
-	<p>Так зародился электронный прародитель MEMOTRIP.</p>
-
-    <h3>Эволюция или как список стал огромным мутантом</h3>
-    <p>Очень быстро я понял, что универсальный список на все случаи жизни - это утопия. Такого списка нет, не было и не будет. Каждая поездка уникальная, рыбалка на Черкащине разительно отличается от отдыха в пятизвездочном отеле Турции.</p>
-    <p>Небольшой списочек из кусочка бумаги перекочевал в Word. И постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествий, он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым.</p>
-    <p>В этой куче невозможнно было уже разобраться и я  понял, что пора приступать в следующему этапу</p>
-
-    <h3>Вершина эволюции - появление суперсписка</h3>
-	<p>Последняя фаза заключалась в том, что список нужно было перенести на сайт.</p>
-	<p>Это удобно - он всегда под рукой. Это понятно - сайт очень прост и читабелен. И, наконец, это социально - каждый может воспользоваться списком.</p>
-    <p>Вот теперь список необходимых вещей превратился в "бабочку". В МЕМОТРИП вы можете выбрать несколько параметров путешествия и получить более менее внятный набор вещей, которые нужно захватить именно в Ваш круиз. </p>
-       
-    <h3>Дисклаймер</h3>
-    <p>Внимание! MEMOTRIP - не панацея, а всего лишь помощник. В наборе может не оказаться необходимых вам вещей. Всегда помните об этом и не забывайте эти вещи!</p>
-    <p>Счастливого пути!</p> 
-  </div>
-</div>  
-<!--
- <pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
- <code>gh-pages</code> 
- -->
 </section>
 <!--	
 	<footer>
@@ -759,198 +737,9 @@ $ git checkout gh-pages
 	</footer>
  -->
 </div>
-    
-    
-    <script>
-    var $j = jQuery.noConflict();  
-
-
-
-    $j(document).ready(function() { 
-
-     $j(".n01").click(function () {
-        $j(this).toggleClass("active");
-        $j(".girl_list").fadeToggle("slow");
-      }); 
-     $j(".n02").click(function () {
-        $j(this).toggleClass("active");
-        $j(".camp_list").fadeToggle("slow");
-      });
-      $j(".n03").click(function () {
-        $j(this).toggleClass("active");
-        $j(".cold_list").fadeToggle("slow");
-      });
-      $j(".n04").click(function () {
-        $j(this).toggleClass("active");
-        $j(".sun_list").fadeToggle("slow");
-      });
-      $j(".n05").click(function () {
-        $j(this).toggleClass("active");
-        $j(".rain_list").fadeToggle("slow");
-      });
-      $j(".n06").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tourism_list").fadeToggle("slow");
-      });
-      $j(".n07").click(function () {
-        $j(this).toggleClass("active");
-        $j(".mount_list").fadeToggle("slow");
-      });
-      $j(".n08").click(function () {
-        $j(this).toggleClass("active");
-        $j(".swim_list").fadeToggle("slow");
-      });
-      $j(".n09").click(function () {
-        $j(this).toggleClass("active");
-        $j(".fish_list").fadeToggle("slow");
-      });
-	  $j(".n10").click(function () {
-        $j(this).toggleClass("active");
-        $j(".hunt_list").fadeToggle("slow");
-      });
-	  $j(".n11").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tablet_list").fadeToggle("slow");
-      });
-      $j(".n12").click(function () {
-        $j(this).toggleClass("active");
-        $j(".photo_list").fadeToggle("slow");
-      });
-	  $j(".n13").click(function () {
-        $j(this).toggleClass("active");
-        $j(".medicine_list").fadeToggle("slow");
-      });
-
-
-     $j(".c01").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.abroad_list").fadeToggle("slow");
-      }); 
-     $j(".c02").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.tour_list").fadeToggle("slow");
-      });
-      $j(".c03").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.cold_list").fadeToggle("slow");
-      });
-      $j(".c04").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.sun_list").fadeToggle("slow");
-      });
-      $j(".c05").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.rain_list").fadeToggle("slow");
-      });
-      $j(".c06").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.swim_list").fadeToggle("slow");
-      });
-      $j(".c07").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.board_list").fadeToggle("slow");
-      });
-      $j(".c08").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.swim_list").fadeToggle("slow");
-      });
-      $j(".c09").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tablet_list").fadeToggle("slow");
-      });
-	  $j(".c10").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.notebook_list").fadeToggle("slow");
-      });
-	  $j(".c11").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.photo_list").fadeToggle("slow");
-      });
-	  $j(".c12").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list > article .list >.medicine_list").fadeToggle("slow");
-      });
-
-
-
-
-	$j(".ch13").click(function () {
-        $j(this).toggleClass("active");
-        $j(".rain_list").fadeToggle("slow");
-	});
-	$j(".ch14").click(function () {
-        $j(this).toggleClass("active");
-        $j(".notebook_list").fadeToggle("slow");
-	});
-	$j(".ch15").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tour_list").fadeToggle("slow");
-	});
-	
-	$j(".check").click(function () {
-        $j(".intro").slideUp("slow");
-	});
-
-
-	$j(".mm01").click(function () {
-        $j(this).addClass("visible");
-        $j(".cat__nat").slideDown("slow");
-        $j(".civil").slideUp("slow");
-        $j(".natural-list").slideDown("slow");
-        $j(".civil-list").slideUp("slow");
-
-        $j(".mm02").removeClass("visible ");
-
-
-	});
-	$j(".mm02").click(function () {
-        $j(this).addClass("visible");
-        $j(".civil").slideDown("slow");
-        $j(".cat__nat").slideUp("slow");
-
-         $j(".civil-list").slideDown("slow");
-        $j(".natural-list").slideUp("slow");
-		$j(".mm01").removeClass("visible");
-	});
-
-
-	
-
-	
-
-		$j('.btn-info').click(function(){ 
-			$j('.info').slideToggle("slow");
-		});
-		$j('.btn-remember').click(function(){ 
-			$j('.remember').slideToggle("slow");
-		});
-  });
-    
-
-   
-    </script>
-    <script type="text/javascript">
-      function startTime()
-      {
-      var tm=new Date();
-      var h=tm.getHours();
-      var m=tm.getMinutes();
-      var s=tm.getSeconds();
-      m=checkTime(m);
-      s=checkTime(s);
-      document.getElementById('timer').innerHTML=h+":"+m+":"+s;
-      t=setTimeout('startTime()',500);
-      }
-      function checkTime(i)
-      {
-      if (i<10)
-      {
-      i="0" + i;
-      }
-      return i;
-      }
-    </script>
-    <script src="javascripts/scale.fix.js"></script>
+<script src="javascripts/filters.js"></script>
+<script src="javascripts/timer.js"></script>
+<script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
