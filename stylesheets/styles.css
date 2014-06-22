@@ -45,50 +45,6 @@ a {
 }
 
 
-.wrapper {
-  width:900px;
-  margin:0 auto;
-  overflow:hidden;
-	position:relative;
-  //background:#fff;
-  //border-radius:5px;
- // padding:10px 20px;
-  //min-height:800px;
-  //border:10px solid #efefef;
-}
-
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
 img {
   max-width:100%;
 }
@@ -98,70 +54,37 @@ strong {
   font-weight:700;
 }
 
+.wrapper {
+  width:900px;
+  margin:10px auto;
+  overflow:hidden;
+  position:relative;
 
-.logo{
-  margin: 0 0 20px 0;
-  width:250px;
-  float:left;
 }
-
-
-header .category{
-  padding: 0 10px 10px 10px;
-  overflow: hidden;
-}
-
-header .subcat{
-  margin:10px 0;
-}
-.information{
-	overflow:hidden;
-	position:absolute;
-	width:900px;
-}
-.links{
-  margin: 30px 0 10px 0;
-  font-size: 14px;
-  float:right;
-  overflow: hidden;
-  width:300px;
-}
-
-.instruction p{
-  font-size:12px;
-  color:#77c34a;
-  line-height:16px;
-}
-.btn-info,.btn-remember{
-  border-bottom:1px dashed #666;
+aside{
+  width:23%;
+  margin:0 20px 0 0;
   float: left;
+  min-height:520px;
+  overflow:hidden;
+}
+aside .logo{
+  margin: 0 0 20px 0;
+  width: 200px;
+}
+aside .filter{
   background:#fff;
-  margin:0 0 5px 0;
-  line-height:20px;
+  min-height:400px;
+  overflow:hidden;
+  border-radius:30px;
+  border: 5px solid #efefef;
 }
-
-
-.info, .remember{
-  display:none;
-  border:2px solid #efefef;
-  border-radius:5px;
-  padding:0 10px 10px 10px;
-  margin:25px 0 0 0;
-  font-size:13px;
-  color:#494949;
-}
-.remember ol{
-	padding:5px 5px 5px 25px;
-	margin:0;
-	font-size:14px;
-	font-weight:bold;
-}
-
-
-header{
-	overflow:hidden;
-	margin:0 0 30px 0;
-	background:#fff;
+aside .category{
+  border-radius: 5px;
+  font-size: 14px;
+  color: #77c34a;
+  overflow:hidden;
+  margin: 10px 0;
 }
 .subcat__title{
   border-bottom:1px solid #dadada;
@@ -196,33 +119,7 @@ header{
   color: #fff;
   //border-bottom: 2px solid #77c34a;
 }
-.cat{
-  //background: #fff;
- 
-  border-radius: 5px;
-  //margin: 0 0 10px 0;
-  font-size: 14px;
-  color: #77c34a;
-  overflow:hidden;
-}
-.subcat{
-	float:left;
-	width:150px;
-	//margin:0 5px 10px 0;
-}
 
-.tabs{
-	overflow:hidden;
-	width:860px;
-	margin:0 auto;
-}
-.content{
-background:#fff;
-width:900px;
-	margin:0 auto;
- //border: 2px solid #77c34a;
-
-}
 .mm01, .mm02{
   padding:0 0 0 10px;
   cursor: pointer;
@@ -234,11 +131,61 @@ width:900px;
  color:#fff
 }
 
+
+
+.information{
+	overflow:hidden;
+	position:absolute;
+	width:900px;
+}
+.links{
+  margin: 30px 0 10px 0;
+  font-size: 14px;
+  float:right;
+  overflow: hidden;
+  width:160px;
+}
+
+.instruction p{
+  font-size:12px;
+  color:#77c34a;
+  line-height:16px;
+}
+.btn-info,.btn-remember{
+  border-bottom:1px dashed #fff;
+  float: left;
+  background:#77c34a;
+  color: #fff;
+  margin:0 0 5px 0;
+  line-height:20px;
+  padding: 0 5px;
+}
+
+
+.info, .remember{
+  display:none;
+  border:2px solid #efefef;
+  border-radius:5px;
+  padding:0 10px 10px 10px;
+  margin:25px 0 0 0;
+  font-size:13px;
+  color:#494949;
+}
+.remember ol{
+	padding:5px 5px 5px 25px;
+	margin:0;
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+
+
 section {
  // width:620px;
  // float:right;
  padding-bottom:20px;
-  top:-90px;
+//  top:-90px;
 }
 
 section p{
@@ -279,7 +226,7 @@ section .intro:after {
 article{
 	
 	//background: #fefefe;
-	background: rgba(255, 255, 255, 0.8);
+
 	//display: table;
 	//margin: 0 0 2px 0;
 	overflow:hidden;
@@ -294,6 +241,7 @@ article .list{
 	//width:518px;
   //border-right:2px solid #77c34a;
   //border-radius:0 5px 5px 0;
+  padding: 0 10px;
 
 }
 
@@ -321,7 +269,7 @@ article .title{
   //display: table-cell;
   //vertical-align: middle;
   //width:90px;
-  padding:0 5px;
+  padding:0 35px;
   //color:#48911D;
   color:#77c34a;
   font-weight:bold;
@@ -474,31 +422,59 @@ footer {
 
 .bag{
 	overflow:hidden;
-	background:#77c34a;
-	border-radius:50px;
+  background:#fff url(http://www.washingtonpost.com/blogs/the-switch/files/2013/11/twitter-f-map.jpg);
+	border-radius:30px;
+  border: 5px solid #77c34a;
+  //padding: 15px;
 	
 }
 .handle{
 	//background:#fff;
 	margin:0 auto;
-	width:20%;
-	height:50px;
+	width:25%;
+	height:80px;
 	border-radius:50px 50px 0 0;
-	border:40px solid #77c34a;
+	border:5px solid #77c34a;
 	border-bottom:0;
+  overflow: hidden;
 	//float:left;
+  position: relative;
+  top:5px;
+}
+.handle-outer{
+  //background:#fff;
+  //margin:0 auto;
+  //width:20%;
+  //height:50px;
+  border-radius:40px 40px 0 0;
+  border:30px solid #fff;
+  border-bottom:0;
+  //float:left;
+
+}
+.handle-inner{
+  //background:#fff;
+  //margin:0 auto;
+  //width:20%;
+  height:130px;
+  border-radius:10px 10px 0 0;
+  border:5px solid #77c34a;
+  border-bottom:0;
+  //float:left;
 }
 .center{
-	width:65%;
-	background:#77c34a;
-	padding:30px;
-	border-left:20px solid #fff;
-	border-right:20px solid #fff;
-
-	min-height:400px;
-	margin:0 auto;
+	//width:65%;
+  //background:#fff;
+	//padding:30px;
+	//border-left:5px solid #77c34a;
+    background: rgba(255, 255, 255, 0.9);
+	min-height:510px;
+	//float: left;
 	overflow:hidden;
+  border-radius:20px;
 }
+
+
 				
 @media print, screen and (max-width: 960px) {
   
@@ -521,8 +497,8 @@ section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
-    margin:0 0 20px;
-	position:absolut;
+    //margin:0 0 20px;
+	 //position:absolut;
   }
   
   header a small {
