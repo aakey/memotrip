@@ -180,12 +180,19 @@ aside .category{
 
 
 
-
+.bg{
+	width:700px;
+	position:relative;
+	//top:-100px;
+	z-index:1;
+	//left:120px;
+}
 section {
- // width:620px;
+ //width:700px;
  // float:right;
  padding-bottom:20px;
 //  top:-90px;
+//background:#FFF url(../image/case.jpg) 0 0 no-repeat;
 }
 
 section p{
@@ -231,6 +238,8 @@ article{
 	//margin: 0 0 2px 0;
 	overflow:hidden;
 	width:100%;
+	position:relative;
+	z-index:2;
 }
 
 article p:nth-child(odd) {
@@ -422,10 +431,12 @@ footer {
 
 .bag{
 	overflow:hidden;
-  background:#fff url(http://www.washingtonpost.com/blogs/the-switch/files/2013/11/twitter-f-map.jpg);
-	border-radius:30px;
-  border: 5px solid #77c34a;
+  //background:#fff url(http://www.washingtonpost.com/blogs/the-switch/files/2013/11/twitter-f-map.jpg);
+	//border-radius:30px;
+  //border: 5px solid #77c34a;
   //padding: 15px;
+  margin:90px 0 0 0;
+  position:relative;
 	
 }
 .handle{
@@ -462,16 +473,30 @@ footer {
   border-bottom:0;
   //float:left;
 }
-.center{
-	//width:65%;
+.natural-list{
+	width:517px;
   //background:#fff;
 	//padding:30px;
-	//border-left:5px solid #77c34a;
-    background: rgba(255, 255, 255, 0.9);
-	min-height:510px;
+	//border-left:30px solid #ccc;
+	//border-right:30px solid #ccc;
+	//border-top:30px solid #ccc;
+    background: #fff;
+	height:510px;
+	margin:0 auto;
 	//float: left;
-	overflow:hidden;
-  border-radius:20px;
+	position:relative;
+	top:30px;
+	
+}
+
+.center{
+	background: #efefef;
+	margin:0 auto;
+	border: 5px solid #77c34a;
+	width:578px;
+	border-radius:20px 20px 0 0 ;
+	//overflow:hidden;
+	
 }
 
 
