@@ -18,12 +18,22 @@
   </head>
   <body onload="startTime()">
 	
+
     <div class="wrapper">
+	
+		<div class="information">
+			<div class="logo">
+				<!-- <div id="timer"> </div> -->
+				<img src="image/logo.png" alt="" />
+			</div>
+			<div class="links">
+				 <a href="#info" class="btn-info">Что такое MEMOTRIP</a>
+				 <a href="#remember" class="btn-remember">Не забудь выключить!</a>
+			</div>
+		</div>	
+
+	<section>
 	<aside>
-		<div class="logo">
-			<div id="timer"> </div>
-			<img src="image/logo.png" alt="" />
-		</div>
 		<div class="filter">
 			<!-- <div class="mm01 visible">Фильтры</div> -->
 
@@ -42,7 +52,7 @@
 				</div>
 				
 				<div class="subcat">
-					<h4 class="subcat__title">Цивилизованный отдых</h4>
+					<h4 class="subcat__title">Со сьемным жильем</h4>
 					<div class="abroad">
 						Еду заграницу
 						<div class="check c01"></div>
@@ -57,7 +67,7 @@
 						<div class="check c12"></div>
 					</div>
 				</div>
-				<div class="subcat">
+				<div class="subcat" style="width: 110px;">
 					<h4 class="subcat__title">Прогноз погоды</h4>
 					 <div class="cold">
 						Холодно
@@ -115,7 +125,7 @@
 					</div>
 				</div>
 				
-				<div class="subcat">
+				<div class="subcat" style='width: 110px;'>
 					<h4 class="subcat__title">Дополнительно</h4>
 					<div class="medicine">
 						Аптечка
@@ -125,16 +135,9 @@
 			</div>
 		</div>
 	</aside>
-
-
-	<section>
-		<div class="information">
-			<div class="links">
-				 <a href="#info" class="btn-info">Что такое MEMOTRIP</a>
-				 <a href="#remember" class="btn-remember">Не забудь выключить!</a>
-			</div>
-		</div>	
-		<!--<div class="handle">
+	<!--
+		
+		<div class="handle">
 			<div class="handle-outer">
 				<div class="handle-inner"></div>
 			</div>
@@ -157,7 +160,6 @@
 					</article>
 
 					<article>
-						
 							<div class="title">
 								<span>Одежда</span>
 							</div>
@@ -205,223 +207,7 @@
 						</div>
 					</article>
 				  
-					<article>
-						
-							<div class="title">
-								<span>Снаряжение</span>
-							</div>
-						<div class="list">
-							<div class="main">  
-								<p>Нож</p>
-								<p>Сидушка поясная</p>
-							</div> 
-							
-							<!-- Жарко -->
-							<div class="sun_list">  
-								<p>Очки солнечные</p>
-							</div>
-							
-							<!-- Ночевка -->
-							<div class="camp_list">  
-								<p>Палатка</p>
-								<p>Спальник</p>
-								<p>Фонарик</p>
-								<p>Топорик</p>
-								<p>Каремат</p>
-								<p>Зажигалка</p>
-							</div>
-							
-							<!-- Дождь -->
-							<div class="rain_list">  
-								<p>Дождевик</p>
-								<p>Клеенка/тент</p>
-							</div>  					
-						</div>
-						
-					</article>
-				 
-					<article>
-						<div class="title">
-							<span>Гаджеты</span>
-						</div>
-						<div class="list">
-							<div class="main">  
-								<p>Смартфон + зарядное</p>
-							</div>
-							
-							<!-- Планшет -->
-							<div class="tablet_list">
-								<p>Планшет + зарядное</p>
-							</div>
-							
-							<!-- Ноутбук -->
-							<div class="notebook_list">
-								<p>Ноутбук + зарядное</p>
-							</div>
-							
-							<!-- Фотоаппарат -->
-							<div class="photo_list">
-								<p>Фотоаппарат + зарядное/батарейки</p>
-							</div>
-						</div>
-
-					</article>
-
-					<article>
-						<div class="title">
-							<span>Гигиена</span>
-						</div>
-						<div class="list">
-							<div class="main">
-								<p>Салфетки влажные</p>
-								<p>Расческа</p>
-							</div> 
-							
-							<!-- Ночевка -->
-							<div class="camp_list">
-								<p>Зубная паста/щетка</p>
-								<p>Дезодорант</p>
-								<p>Шампунь</p>
-								<p>Мыло жидкое</p>
-								<p>Туалетная бумага</p>
-							</div>
-							
-							<!-- Девушка -->
-							<div class="girl_list">
-								<p>Прокладки/тампоны</p>
-								<p>Средство для умывания</p>
-								<p>Спонжики</p>
-								<p>Зеркальце</p>
-								<p>Крема</p>
-								<p>Ножнички</p>
-								<p>Гигиеническая помада</p>
-							</div> 
-						</div>
-						
-					</article>
-
-					<article>
-						<div class="title">
-							<span>Аптечка</span>
-						</div>
-						<div class="list">
-							<div class="main">
-								<p>Лейкопластырь</p>
-							</div> 
-							
-							<!-- Жарко -->
-							<div class="sun_list">  
-								<p>Крем для загара</p>
-							</div>
-							
-							<!-- Аптечка -->
-							<div class="medicine_list">
-								<p>Диазолин</p>
-								<p>Активированный уголь</p>
-								<p>Бинт нестерильный</p>
-								<p>Спирт медицинский</p>
-								<p>Йод</p>
-								<p>Фталазол</p>
-								<p>Цитрамон</p>
-								<p>Аспирин</p>
-								<p>Бепантен</p>
-							</div>  
-							<div class="drink_list">
-								
-							</div>  
-						</div>
-						
-					</article>
-
-
-					<article class="camp_list">
-						<div class="title">
-							<span>Посуда</span>
-						</div>
-						<div class="list">
-							<div class="main">
-								<p>Кружка</p>
-								<p>Ложка</p>
-								<p>Миска</p>
-								<p>Котелок</p>
-							</div>				
-						</div>   
-						
-					</article>
-
-					<article class="fish_list">
-						<div class="title">
-							<span>Рыбалка</span>
-						</div>
 					
-						<div class="list">
-							 
-							<!-- Рыбалка -->
-							<div class="fish_list">  
-								<p>Спининг</p>
-								<p>Катушка</p>
-								<p>Снасти</p>
-								<p>Наживка</p>
-								<p>Садок</p>
-								<p>Подсак</p>
-								<p>Щипцы длинные</p>
-								<p>Ремкомплект</p>
-								<p>Лодка</p>
-								<p>Весла</p>
-								<p>Доска</p>
-								<p>Терка</p>
-								<p>Чистка</p>
-							</div>  
-						</div>
-						
-					</article>
-					<article class="mount_list">
-						<div class="list">
-							 
-							<!-- Скалолазание -->
-							<div class="mount_list">  
-								<p>Веревки</p>
-								<p>Карабины</p>
-								<p>Система</p>
-							</div>  
-						</div>
-						<div class="title">
-							<span>Скалолазание</span>
-						</div>
-					</article>
-					
-					<article class="hunt_list">
-						<div class="list">
-						
-							<!-- Охота -->
-							<div class="hunt_list">  
-								<p>Ружье</p>
-								<p>Патроны</p>
-								<p>Нож</p>
-								<p>Пыжи</p>
-								<p>Порох</p>
-							</div>
-						</div>
-						<div class="title">
-							<span>Охота</span>
-						</div>
-					</article>
-					
-					<article class="board_list">
-						<div class="list">
-							
-							<!-- Сноуборд -->
-							<div class="board_list">  
-								<p>Сноуборд</p>
-								<p>Чехол</p>
-								<p>Крепы</p>
-								<p>Ботинки</p>
-							</div>  
-						</div>
-						<div class="title">
-							<span>Сноуборд</span>
-						</div>
-					</article>
 				</div>
 			</div>
 			<img class='bg' src="image/case.png" alt="" />

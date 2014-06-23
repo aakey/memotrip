@@ -56,42 +56,55 @@ strong {
 
 .wrapper {
   width:900px;
-  margin:10px auto;
+  margin:0 auto;
   overflow:hidden;
   position:relative;
 
 }
 aside{
-  width:23%;
-  margin:0 20px 0 0;
-  float: left;
-  min-height:520px;
+  //width:23%;
+ // margin:0 20px 0 0;
+ // float: left;
+  height:140px;
   overflow:hidden;
+  //background: #fff;
+  //border-bottom: 5px solid #77c34a;
+ 
 }
-aside .logo{
-  margin: 0 0 20px 0;
-  width: 200px;
+.logo{
+  margin: 10px 0;
+  float: left;
+  width: 150px;
 }
 aside .filter{
-  background:#fff;
+  background:#f2f2f2;
   min-height:400px;
   overflow:hidden;
   border-radius:30px;
-  border: 5px solid #efefef;
+  border: 5px solid #77c34a;
+  border-bottom: none;
+   width: 768px;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
 }
 aside .category{
   border-radius: 5px;
   font-size: 14px;
   color: #77c34a;
   overflow:hidden;
-  margin: 10px 0;
+ // margin: 10px 0;
 }
+aside .subcat{
+  float: left;
+  width: 135px;
+}
+
 .subcat__title{
   border-bottom:1px solid #dadada;
   font-weight:normal;
   color:#77c34a;
   font-size:11px;
-  margin:10px 10px 3px 10px;
+  margin:5px 10px 3px 10px;
   padding:0;
 }
 
@@ -135,29 +148,31 @@ aside .category{
 
 .information{
 	overflow:hidden;
-	position:absolute;
-	width:900px;
+	//position:absolute;
+	width:768px;
+  margin: 0 auto;
 }
 .links{
-  margin: 30px 0 10px 0;
+  margin: 15px 0 10px 0;
   font-size: 14px;
   float:right;
   overflow: hidden;
-  width:160px;
+  //width:160px;
 }
 
 .instruction p{
-  font-size:12px;
+  font-size:14px;
   color:#77c34a;
   line-height:16px;
 }
 .btn-info,.btn-remember{
   border-bottom:1px dashed #fff;
-  float: left;
+  /*float: left;*/
   background:#77c34a;
   color: #fff;
-  margin:0 0 5px 0;
+  margin:0 0 5px 20px;
   line-height:20px;
+  font-size: 16px;
   padding: 0 5px;
 }
 
@@ -181,18 +196,19 @@ aside .category{
 
 
 .bg{
-	width:700px;
-	position:relative;
+	//width:700px;
+	//position:relative;
 	//top:-100px;
-	z-index:1;
+	//z-index:1;
 	//left:120px;
 }
 section {
  //width:700px;
  // float:right;
- padding-bottom:20px;
+ padding:0 0 20px 0;
 //  top:-90px;
 //background:#FFF url(../image/case.jpg) 0 0 no-repeat;
+
 }
 
 section p{
@@ -339,7 +355,7 @@ footer {
   overflow:hidden;
   margin: 0 10px 3px 10px;
   height: 16px;
-  font-size: 13px;
+  font-size: 11px;
   color: #777;
   padding: 0 0 0 20px
 }
@@ -435,7 +451,7 @@ footer {
 	//border-radius:30px;
   //border: 5px solid #77c34a;
   //padding: 15px;
-  margin:90px 0 0 0;
+  //margin:90px 0 0 0;
   position:relative;
 	
 }
@@ -474,18 +490,18 @@ footer {
   //float:left;
 }
 .natural-list{
-	width:517px;
+	width:692px;
   //background:#fff;
 	//padding:30px;
 	//border-left:30px solid #ccc;
 	//border-right:30px solid #ccc;
 	//border-top:30px solid #ccc;
     background: #fff;
-	height:510px;
+	min-height:230px;
 	margin:0 auto;
 	//float: left;
 	position:relative;
-	top:30px;
+	top:5px;
 	
 }
 
@@ -493,8 +509,9 @@ footer {
 	background: #efefef;
 	margin:0 auto;
 	border: 5px solid #77c34a;
-	width:578px;
-	border-radius:20px 20px 0 0 ;
+  border-top: none;
+	width:768px;
+	//border-radius:20px 20px 0 0 ;
 	//overflow:hidden;
 	
 }
