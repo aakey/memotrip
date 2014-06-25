@@ -1,147 +1,151 @@
- var $j = jQuery.noConflict();  
-
- $j(document).ready(function() { 
-
-     $j(".n01").click(function () {
-        $j(this).toggleClass("active");
-        $j(".girl_list").fadeToggle("slow");
-      }); 
-     $j(".n02").click(function () {
-        $j(this).toggleClass("active");
-        $j(".camp_list").fadeToggle("slow");
-      });
-      $j(".n03").click(function () {
-        $j(this).toggleClass("active");
-        $j(".cold_list").fadeToggle("slow");
-      });
-      $j(".n04").click(function () {
-        $j(this).toggleClass("active");
-        $j(".sun_list").fadeToggle("slow");
-      });
-      $j(".n05").click(function () {
-        $j(this).toggleClass("active");
-        $j(".rain_list").fadeToggle("slow");
-      });
-      $j(".n06").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tourism_list").fadeToggle("slow");
-      });
-      $j(".n07").click(function () {
-        $j(this).toggleClass("active");
-        $j(".mount_list").fadeToggle("slow");
-      });
-      $j(".n08").click(function () {
-        $j(this).toggleClass("active");
-        $j(".swim_list").fadeToggle("slow");
-      });
-      $j(".n09").click(function () {
-        $j(this).toggleClass("active");
-        $j(".fish_list").fadeToggle("slow");
-      });
-	  $j(".n10").click(function () {
-        $j(this).toggleClass("active");
-        $j(".hunt_list").fadeToggle("slow");
-      });
-	  $j(".n11").click(function () {
-        $j(this).toggleClass("active");
-        $j(".tablet_list").fadeToggle("slow");
-      });
-      $j(".n12").click(function () {
-        $j(this).toggleClass("active");
-        $j(".photo_list").fadeToggle("slow");
-      });
-	  $j(".n13").click(function () {
-        $j(this).toggleClass("active");
-        $j(".medicine_list").fadeToggle("slow");
-      });
-
-
-     $j(".c01").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .abroad_list").fadeToggle("slow");
-      }); 
-     $j(".c02").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .tour_list").fadeToggle("slow");
-      });
-      $j(".c03").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .cold_list").fadeToggle("slow");
-      });
-      $j(".c04").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list  .sun_list").fadeToggle("slow");
-      });
-      $j(".c05").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .rain_list").fadeToggle("slow");
-      });
-      $j(".c06").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .swim_list").fadeToggle("slow");
-      });
-      $j(".c07").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .board_list").fadeToggle("slow");
-      });
-      $j(".c08").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list  .tablet_list").fadeToggle("slow");
-      });
-	  $j(".c09").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list  .notebook_list").fadeToggle("slow");
-      });
-	  $j(".c10").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .photo_list").fadeToggle("slow");
-      });
-	  $j(".c11").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .medicine_list").fadeToggle("slow");
-      });
-	  $j(".c12").click(function () {
-        $j(this).toggleClass("active");
-        $j(".civil-list .girl_list").fadeToggle("slow");
-      });
-	  
-
-	$j(".check").click(function () {
-        $j(".start").slideUp("slow");
-		$j(".change").slideDown("slow");
-	});
-
-
-	$j(".mm01").click(function () {
-        $j(this).addClass("visible");
-        $j(".cat__nat").slideDown("slow");
-        $j(".civil").slideUp("slow");
-        $j(".natural-list").slideDown("slow");
-        $j(".civil-list").slideUp("slow");
-
-        $j(".mm02").removeClass("visible ");
-
-
-	});
-	$j(".mm02").click(function () {
-        $j(this).addClass("visible");
-        $j(".civil").slideDown("slow");
-        $j(".cat__nat").slideUp("slow");
-
-         $j(".civil-list").slideDown("slow");
-        $j(".natural-list").slideUp("slow");
-		$j(".mm01").removeClass("visible");
-	});
-
-
-	
-
-	
-
-		$j('.btn-info').click(function(){ 
-			$j('.info').slideToggle("slow");
+var cat = {
+			"wear":"Одежда",
+			"gadg":"Гаджеты",
+			"item":"Снаряжение",
+			"hygiene":"Гигиена",
+			"tableware":"Посуда",
+			"docs":"Документы"
+		};
+		var arr = {
+			"camp": {
+				"wear":[
+					"Баф",
+					"Футболка",
+					"Футболка длинный рукав",
+					"Шорты сменные",
+					"Свитер/реглан",
+					"Штаны",
+					"Носки",
+					"Шлепанцы",
+					"Нижнее белье",
+					"Спальный комплект"
+				],
+				"item":[
+					"Нож",
+					"Пятиточеник",
+					"Палатка",
+					"Спальник",
+					"Фонарик + батарейки",
+					"Топорик",
+					"Каремат",
+					"Зажигалка"
+				],
+				"hygiene":[
+					"Салфетки влажные",
+					"Расческа",
+					"Зубная паста/щетка",
+					"Дезодорант",
+					"Шампунь",
+					"Мыло",
+					"Туалетная бумага"
+				],
+				"tableware":[
+					"Кружка",
+					"Ложка",
+					"Миска",
+					"Котелок"
+				],
+				"gadg":[
+					"Смартфон + зарядка"
+				]
+			},
+			"abroad": {
+				"gadg":[
+					"Планшет",
+					"Ноутбук",
+					"Смартфон + зарядка"
+				],
+				"docs":[
+					"Загран пасспорт",
+					"Справка о доходах",
+					"Билеты"
+				]
+			},
+			"girl": {
+				"docs":[
+					"Планшет",
+					"Ноутбук",
+					"Смартфон + зарядка"
+				],
+			}
+			
+		};
+		//console.log(arr['t1'], arr['t2']); 
+		
+	$('document').ready(function(){
+		$('.btn-info').click(function(){ 
+			$('.info').slideToggle("slow");
 		});
-		$j('.btn-remember').click(function(){ 
-			$j('.remember').slideToggle("slow");
+		$('.btn-remember').click(function(){ 
+			$('.remember').slideToggle("slow");
 		});
-  });
+
+
+		
+		$(".subcat .check").live("click", function() {
+		    if ($(this).attr("class") == "check active") {
+		    	$(this).removeClass("active");	      //Удаляем класс "active", кнопка переходит в ненажатое состояние
+		    	var addId = $(this).parent().attr("id");    //Записываем в переменную имя id, которое соотв div с таким же именем класса
+		    	
+				
+				$('article .'+ addId).remove();         //Удаляем div с соответствующим классом из DOM
+				
+				
+				
+				$("article div").removeClass('hidden');
+				var supervise2 = {};
+				
+				$('article div').each(function() {
+				    var txt = $(this).text();
+				    if (supervise2[txt])
+				        $(this).addClass('hidden');
+				    else
+				        supervise2[txt] = true;
+				});
+					
+		    }
+			
+		    else {
+		    	$(this).addClass("active");
+				var addId = $(this).parent().attr("id");
+				console.log(addId); 
+				
+				for(var item in arr[addId]){
+					$(".packlist").find("article." + item).append("<div class='title " + addId + "'" + "data="+ item + ">" + cat[item] + "</div>");
+					console.log(cat[addId]);
+					$.each(arr[addId][item], function(key, val) {
+						$ (".packlist").find("article." + item).append("<div class='" + addId + "'" + "data="+ item + ">" + val + "</div>");
+					
+					});
+				}
+
+
+
+				var supervise = {};
+				$('article div').each(function() {
+				    var txt = $(this).text();
+				    if (supervise[txt])
+				        $(this).addClass('hidden');
+				    else
+				        supervise[txt] = true;
+				});
+
+				$('article .'+ addId).animate({    
+					opacity: 1,
+					"margin-left":"15px"
+				}, 500);
+
+
+				
+		    }  
+		});
+	});
+
+
+
+
+
+
+
+
+
