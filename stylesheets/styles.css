@@ -258,26 +258,27 @@ footer p{
   width: 63px;
 }
 
-.abroad, 
-.drink, 
-.nature, 
-.fish, 
-.hunt, 
-.board, 
-.cold, 
-.tour, 
-.sun, 
-.swim, 
-.camp, 
-.medicine, 
-.tablet, 
-.notebook, 
-.tourism, 
-.photo,
-.girl,
-.axe,
-.mount, 
-.rain{
+#camping, 
+#felling,
+#cooking,
+#abroad, 
+#drink, 
+#fishing, 
+#hunting, 
+#boarding, 
+#swiming, 
+#climbing, 
+#hiking, 
+#tour, 
+#medicine, 
+#tablet, 
+#notebook, 
+#photo,
+#video,
+#woman,
+#hot, 
+#cold, 
+#rain{
   background: url(../image/sprites.png) no-repeat;
   overflow:hidden;
   margin: 0 10px 3px 10px;
@@ -311,61 +312,61 @@ footer p{
 .tour_list
 {display: none;}
 
-.tour{
+#tour{
 	background-position: 0 -850px;
 }
-.photo{
+#photo{
 	background-position: 0 -750px ;
 }
-.tourism{
+#hiking{
 	background-position: 0 -800px ;
 }
-.rain{
+#rain{
 	background-position: 0 -600px ;
 }
-.sun{
+#hot{
 	background-position: 0 -550px ;
 }
-.swim{
+#swiming{
 	background-position: 0 -500px ;
 }
-.tablet{
+#tablet{
 	background-position: 0 -450px ;
 }
-.abroad{
+#abroad{
 	background-position: 0 -400px ;
 }
-.board{
+#boarding{
 	background-position: 0 -350px ;
 }
-.camp{
+#camping{
 	background-position: 0 -300px ;
 }
-.drink{
+#drink{
 	background-position: 0 -250px ;
 }
-.fish{
+#fishing{
 	background-position: 0 -200px ;
 }
-.hunt{
+#hunting{
 	background-position: 0 -150px ;
 }
-.medicine{
+#medicine{
 	background-position: 0 -100px ;
 }
-.mount{
+#climbing{
 	background-position: 0 -50px ;
 }
-.notebook{
+#notebook{
 	background-position: 0 0;
 }
-.cold{
+#cold{
 	background-position: 0 -650px ;
 }
-.arrow{
+#arrow{
 	background-position: 0 -700px;
 }
-.girl{
+#woman{
 	background-position: 0 -900px;
 }
 
