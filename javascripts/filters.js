@@ -242,6 +242,8 @@ var cat = {
 
 		
 		$(".subcat .check").live("click", function() {
+				$('.tips').fadeOut("fast");
+
 		    if ($(this).attr("class") == "check active") {
 		    	$(this).removeClass("active");	      //Удаляем класс "active", кнопка переходит в ненажатое состояние
 		    	var addId = $(this).parent().attr("id");    //Записываем в переменную имя id, которое соотв div с таким же именем класса
@@ -296,8 +298,8 @@ var cat = {
 				});
 
 				$('article .'+ addId).animate({    
-					opacity: 1,
-					"padding-left":"15px"
+					//opacity: 1,
+					"top":"0px"
 					
 				}, 500);
 
