@@ -1,213 +1,198 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" >
-    <title>Memotrip by aakey</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" >
+	<title>Memotrip - оптимальный список в дорогу</title>
+	<link rel="stylesheet" href="stylesheets/styles.css">
 	<link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <!--<body onload="startTime()">-->
-  <body>
-    <div class="wrapper">
-		<header>
-			<div class="logo">
-				<!-- div id="timer"> </div -->
-				<img src="image/logo.png" alt="" />
-			</div>
-			<div class="links">
-				 <a href="#info" class="btn-info">Интро</a>
-				 <a href="#remember" class="btn-remember">Уезжая, не забудь!</a>
-			</div>
-		</header>	
+	<body>
+   		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<img src="image/logo.png" alt="" />
+				</div>
+				<div class="links">
+					 <a href="#info" class="btn-info">Интро</a>
+					 <a href="#remember" class="btn-remember">Уезжая, не забудь!</a>
+				</div>
+			</header>	
 
-		<section>
-			<aside>
-				<div class="filter">
-					<!-- div class="mm01 visible">Фильтры</div -->
+			<section>
+				<aside>
 					<div class="category">
-						<div class="subcat nature">
-							<h4 class="subcat__title">Отдых на природе</h4>	
-							<div id="camping" class="camp">
-								C ночевкой
-								<div class="check"></div>
-							</div>
-							<div id="cooking" class="cooking">
-								Шашлык
-								<div class="check"></div>
-							</div>
-							<div id="felling" class="felling">
-								Я дровосек
-								<div class="check"></div>
-							</div>
-							<div class="fishing" id="fishing">
-								Рыбалка
-								<div class="check"></div>
-							</div>
-
-							<div class="hunting" id="hunting">
-								Охота
-								<div class="check"></div>
-							</div>
+						<h4 class="category__title">Отдых на природе</h4>	
+						<div id="cooking">
+							Шашлык
+							<div class="check"></div>
 						</div>
 						
-						<div class="subcat">
-							<h4 class="subcat__title">Отдых с жильем</h4>
-							<div class="abroad" id="abroad">
-								Заграницу
-								<div class="check"></div>
-							</div>
-						
-							<div class="tour" id="tour">
-								Еду в тур
-								<div class="check"></div>
-							</div>
-							<div class="woman" id="woman">
-								Я девушка
-								<div class="check"></div>
-							</div>
+						<div id="fishing">
+							Рыбалка
+							<div class="check"></div>
 						</div>
-						<div class="subcat" style="width: 110px;">
-							<h4 class="subcat__title">Прогноз погоды</h4>
-							 <div class="cold" id="cold">
-								Холодно
-								<div class="check"></div>
-							 </div>
-							 <div class="hot" id="hot">
-								Жарко
-								<div class="check"></div>
-							</div>
-							 <div class="rain" id="rain">
-								Дождь
-								<div class="check"></div>
-							</div>
+						<div  id="hunting">
+							Охота
+							<div class="check"></div>
 						</div>
-					
-						<div class="subcat">	
-							<h4 class="subcat__title">Активный отдых</h4>
-							
-							<div class="hiking" id="hiking">
-								В поход
-								<div class="check"></div>
-							</div>
-							
-							<div class="climbing" id="climbing">
-								Болдеринг
-								<div class="check"></div>
-							</div>
-							<div class="swiming" id="swiming">
-								Плавание
-								<div class="check"></div>
-							</div>
-							<div class="boarding" id="boarding">
-								Сноуборд
-								<div class="check"></div>
-							</div>							
-						</div>
-						<div class="subcat">	
-							<h4 class="subcat__title">Гаджеты</h4>
-							<div class="tablet" id="tablet">
-								Планшет	
-								<div class="check"></div>
-							</div>
-							<div class="notebook" id="notebook">
-								Ноутбук
-								<div class="check"></div>
-							</div>
-							<div class="photo" id="photo">
-								Фото
-								<div class="check"></div>
-							</div>
-							<div class="video" id="video">
-								Камера
-								<div class="check"></div>
-							</div>
-						</div>
-						
-						<div class="subcat" style='width: 110px;'>
-							<h4 class="subcat__title">Дополнительно</h4>
-							<div class="medicine" id="medicine">
-								Аптечка
-								<div class="check"></div>
-							</div>
+						<div id="camping">
+							Ночевка
+							<div class="check"></div>
 						</div>
 					</div>
+					
+					<div class="category">
+						<h4 class="category__title">Отдых с жильем</h4>
+						<div id="abroad">
+							Заграницу
+							<div class="check"></div>
+						</div>
+					
+						<div id="tour">
+							Еду в тур
+							<div class="check"></div>
+						</div>
+						<div id="woman">
+							Я девушка
+							<div class="check"></div>
+						</div>
+					</div>
+					<div class="category">
+						<h4 class="category__title">Прогноз погоды</h4>
+						 <div id="cold">
+							Холодно
+							<div class="check"></div>
+						 </div>
+						 <div id="hot">
+							Жарко
+							<div class="check"></div>
+						</div>
+						 <div id="rain">
+							Дождь
+							<div class="check"></div>
+						</div>
+					</div>
+				
+					<div class="category">	
+						<h4 class="category__title">Активный отдых</h4>
+						
+						<div id="hiking">
+							В поход
+							<div class="check"></div>
+						</div>
+						
+						<div id="climbing">
+							Болдеринг
+							<div class="check"></div>
+						</div>
+						<div id="swiming">
+							Плавание
+							<div class="check"></div>
+						</div>
+						<div id="boarding">
+							Сноуборд
+							<div class="check"></div>
+						</div>							
+					</div>
+					<div class="category">	
+						<h4 class="category__title">Гаджеты</h4>
+						<div id="tablet">
+							Планшет	
+							<div class="check"></div>
+						</div>
+						<div id="notebook">
+							Ноутбук
+							<div class="check"></div>
+						</div>
+						<div id="photo">
+							Фото
+							<div class="check"></div>
+						</div>
+						<div id="video">
+							Камера
+							<div class="check"></div>
+						</div>
+					</div>
+					<div class="category">
+						<h4 class="category__title">Дополнительно</h4>
+						<div id="medicine">
+							Аптечка
+							<div class="check"></div>
+						</div>
+					</div>
+				</aside>
+
+				<div class="packlist">
+				<div class="tips">
+						Отметь нужные пункты и создай свой список вещей.
+					</div>
+					<div class="remember">
+						<ol>
+							<li>Кухонную плиту</li>
+							<li>Электроприборы</li>
+							<li>Верхний свет</li>
+							<li>Воду на кухне</li>
+							<li>Воду в ванной</li>
+						</ol>
+						<div class="close">Закрыть</div>
+					</div>
+					<div class="info" >
+						<h3>Хоп-хоп. Привет путешественникам.</h3>
+						<p>Едешь в поход или на отдых? Зайди на MEMOTRIP и создай оптимальный список для своего приключения.</p>
+
+						<h3>Главное - не забыть дома голову...</h3>
+						<p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь...</p>
+						<p>Самый печальный случай - я уехал и забыл ключи.</p>
+
+						<h3>Появление списка - начало эволюции</h3>
+						<p>Эту проблему я решал, составляя список на клочке бумаги, который писал за день до отьезда. Но как оказывалось, делать списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
+						<p>Так зародился первый электронный прародитель MEMOTRIP.</p>
+
+						<h3>Эволюция или как список стал огромным мутантом</h3>
+						<p>Очень быстро я понял, что список на все случаи жизни - это утопия. Такого списка нет, не было и не будет. Каждая поездка уникальна: рыбалка на Черкащине разительно отличается от отдыха в пятизвездочном отеле Турции.</p>
+						<p>Небольшой списочек из кусочка бумаги перекочевал в Word. И постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествий, он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым и непонятным.</p>
+						<p>В этой куче невозможнно было уже разобраться и я понял, что пора приступать в следующему этапу.</p>
+
+						<h3>Вершина эволюции - появление MEMOTRIP</h3>
+						<p>Последняя фаза заключалась в том, что список нужно было перенести на сайт.</p>
+						<p>Это удобно - он всегда под рукой. Это доступно и понятно - сайт очень прост и читабелен. И, наконец, это социально - каждый может воспользоваться списком.</p>
+						<p>В MEMOTRIP вы можете выбрать перечень параметров путешествия и получить оптимальный набор вещей, которые нужно захватить с собой. </p>
+						<p>Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></p>
+						 
+						<h3>Дисклаймер</h3>
+						<p>Внимание! MEMOTRIP - не панацея, а всего лишь помощник. В наборе может не оказаться необходимых вам вещей. Всегда помните об этом!</p>
+						<p>Счастливого пути!</p>
+
+						<div class="close">Закрыть</div>
+					</div>
+					<article class="docs"></article>
+					<article class="cloth"></article>
+					<article class="equip"></article>
+					<article class="gadg"></article>
+					<article class="clean"></article>
+					<article class="aid"></article>
+					<article class="cook"></article>
+					<article class="fish"></article>
+					<article class="hunt"></article>
+					<article class="board"></article>
+					<article class="climb"></article>
 				</div>
-			</aside>
-			<div class="packlist">
-			<div class="tips">
-					Отметь нужные пункты и создай свой список вещей.
-				</div>
-				<div class="remember">
-					<ol>
-						<li>Кухонную плиту</li>
-						<li>Электроприборы</li>
-						<li>Верхний свет</li>
-						<li>Воду на кухне</li>
-						<li>Воду в ванной</li>
-					</ol>
-				</div>
-				<div class="info" >
-					<h3>Привет путешественникам.</h3>
-					<p> Едешь в поход или на отдых? Обязательно зайди на MEMOTRIP и проверь, что ты забыл захватить.</p>
+			</section>
+			
+			<footer>
+				<img class='bg' src="image/case.png" alt="" />
+				<p>© MEMOTRIP, 2014</p>
+			</footer>
 
-					<h3>Главное - не забыть дома голову...</h3>
-					<p>Я регулярно забываю вещи дома. Иногда уже в пути на вокзал, я вспоминаю, что забыл, и остальную часть дороги думаю - стоит мне возвращаться или нет. Обычно я никогда не возвращаюсь. В итоге я страдаю.</p>
-					<p>Самый печальный случай, когда я уехал и забыл ключи.</p>
-
-					<h3>Зарождение списка вещей в дорогу - начало эволюции</h3>
-					<p>Эту проблему я решал, составляя список на клочке бумаги, который писал за день до отьезда. Но как оказывалось, делать списки по памяти - совсем неблагодарное дело. Все равно что-то забываешь. Поэтому я решил сделать универсальный список "на века".</p>
-					<p>Так зародился электронный прародитель MEMOTRIP.</p>
-
-					<h3>Эволюция или как список стал огромным мутантом</h3>
-					<p>Очень быстро я понял, что универсальный список на все случаи жизни - это утопия. Такого списка нет, не было и не будет. Каждая поездка уникальная, рыбалка на Черкащине разительно отличается от отдыха в пятизвездочном отеле Турции.</p>
-					<p>Небольшой списочек из кусочка бумаги перекочевал в Word. И постепенно стал разрастаться и жиреть. Обрастая новыми вариантами путешествий, он в итоге, превратился в кучу таблиц, разноцветных подчеркиваний и стал совершенно невообразимым.</p>
-					<p>В этой куче невозможнно было уже разобраться и я  понял, что пора приступать в следующему этапу</p>
-
-					<h3>Вершина эволюции - появление суперсписка</h3>
-					<p>Последняя фаза заключалась в том, что список нужно было перенести на сайт.</p>
-					<p>Это удобно - он всегда под рукой. Это понятно - сайт очень прост и читабелен. И, наконец, это социально - каждый может воспользоваться списком.</p>
-					<p>Вот теперь список необходимых вещей превратился в "бабочку". В МЕМОТРИП вы можете выбрать несколько параметров путешествия и получить более менее внятный набор вещей, которые нужно захватить именно в Ваш круиз. </p>
-					<p><small>Вопросы и пожелания на почту <a href="mailto:memotrip.com@gmail.com">memotrip.com@gmail.com</a></small></p>
-					 
-					<h3>Дисклаймер</h3>
-					<p>Внимание! MEMOTRIP - не панацея, а всего лишь помощник. В наборе может не оказаться необходимых вам вещей. Всегда помните об этом и не забывайте эти вещи!</p>
-					<p>Счастливого пути!</p> 
-				</div>
-				<article class="docs"></article>
-				<article class="cloth"></article>
-				<article class="equip"></article>
-				<article class="gadg"></article>
-				<article class="clean"></article>
-				<article class="aid"></article>
-				<article class="cook"></article>
-				<article class="fish"></article>
-				<article class="hunt"></article>
-				<article class="board"></article>
-				<article class="climb"></article>
-			  
-
-			</div>
-		</section>
-		
-		<footer>
-			<img class='bg' src="image/case.png" alt="" />
-			<p>© MEMOTRIP, 2014</p>
-		</footer>
-
-	</div>
-<script src="javascripts/filters.js"></script>
-<!--<script src="javascripts/timer.js"></script>-->
-<script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+		</div>
+		<script src="javascripts/filters.js"></script>
+		<script src="javascripts/scale.fix.js"></script>
+	</body>
 </html>
