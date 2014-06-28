@@ -245,7 +245,7 @@ $('document').ready(function(){
 	
 
 	
-	$(".category .check").live("click", function() {
+	$(".category .check").click(function(){ 
 			//Скрываем подсказку
 			$('.tips').fadeOut(50);
 
