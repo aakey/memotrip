@@ -88,13 +88,21 @@ aside{
   width: 93%;
 }
 
-aside .category{
+aside .category, .disable{
   width: 115px;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: top;
   zoom: 1;
   *display: inline;
+}
+.disable{
+  opacity: 0.3;
+}
+
+aside .disable .check:hover{
+  cursor:text;
+  border:2px solid #ccc;
 }
 
 aside .category__title{
@@ -241,7 +249,11 @@ footer p{
 opacity:0.8;
 }
 
+
+
+
 #camping, 
+#picnic, 
 #felling,
 #cooking,
 #abroad, 
@@ -253,6 +265,7 @@ opacity:0.8;
 #climbing, 
 #hiking, 
 #tour, 
+#trip, 
 #medicine, 
 #tablet, 
 #notebook, 
@@ -270,6 +283,9 @@ opacity:0.8;
 
 #tour{
 	background-position: 0 -850px;
+}
+#trip{
+  background-position: 0 -850px;
 }
 #photo{
 	background-position: 0 -750px ;
@@ -296,6 +312,9 @@ opacity:0.8;
 	background-position: 0 -350px ;
 }
 #camping{
+  background-position: 0 -300px ;
+}
+#picnic{
 	background-position: 0 -300px ;
 }
 #drink{
