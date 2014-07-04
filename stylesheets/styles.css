@@ -120,6 +120,14 @@ aside .check{
   background:#fff;
   border-radius:2px;
 }
+aside .fake{
+  width:12px;
+  height:12px;
+  border:2px solid #ccc;
+  float:right;
+  background:#fff;
+  border-radius:2px;
+}
 
 aside .check:hover{
   cursor:hand;
@@ -185,6 +193,9 @@ aside .active{
   font-weight:bold;
 }
 
+article{
+	margin: 0 0 20px 0;
+}
 
 article div:nth-child(odd) {
 	//background: #fafafa;
@@ -194,7 +205,7 @@ article div{
   padding: 0 0 0 10px;
   border-bottom:1px solid #CFF8B6;
   position: relative;
-  top:-50px;
+  top:-10px;
 }
 article div:hover{
 	//opacity:0.4;
@@ -209,12 +220,12 @@ article .strike{
 
 article .title{
   position:relative;
-  margin:20px 0 0 0;
+  
   color:#fff;
   font-weight:bold;
   border:none;
   background: #77c34a;
-  top:-100px;
+  top:0px;
 }
 article .title:hover{
   opacity:1.0;

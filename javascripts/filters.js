@@ -11,6 +11,7 @@ var cat = {
 	"fish":"Рыбалка",
 	"hunt":"Охота",
 };
+
 var arr = {
 	"camping": {
 		"cloth":[
@@ -370,98 +371,77 @@ $('document').ready(function(){
 	
 
 	
-	$(".check").click(function(){ 
+	$(".check").click(function(Event){ 
+			console.log(Event.target);
 			//Скрываем подсказку
 			$('.tips').fadeOut(50);
 
-	    if ($(this).attr("class") == "check active") {
-
 	    	//Удаляем класс "active", кнопка переходит в ненажатое состояние
-	    	$(this).removeClass("active");	
-
-	    	//Записываем в переменную id родителя, которое соответствует div с таким же именем класса      
-	    	var addId = $(this).parent().attr("id");    
-	    	
-				//Скрываем и анимируем div с соответствующим классом из DOM
-				$('article .'+ addId).animate({    
-					"top": "-50px",
-					"opacity":"0"
-				}, 500); 
-				
-				setTimeout(function () {
-					//Удаляем div с соответствующим классом из DOM с задержкой 400мс
-					$('article .'+ addId).remove();
-
-					//Удаляем класс hidden у повторов с задержкой 400мс
-					$("article div").removeClass('hidden');
-
-					//Добавляем класс hidden для повторяющихся элементов DOM
-					var supervise2 = {};
-					$('article div').each(function() {
-					    var txt = $(this).text();
-					    if (supervise2[txt])
-					        $(this).addClass('hidden');
-					    else
-					        supervise2[txt] = true;
-					});
-				}, 400);
-
-
-					var th = $(this).parent().parent();
-					if ( $(th).hasClass("nature")) {
-		     			$('.civil').removeClass('disable');
-						$('.civil div div').addClass('check');
-						$('.civil div div').removeClass('checkfake');
-		    	}
-		    	
-	    
-    	}
-		
-	    else {
-	    	
-	    	//Добавляем класс "active", кнопка переходит в нажатое состояние
-	    	$(this).addClass("active");
-
-	    	//Записываем в переменную id родителя, которое соответствует div с таким же именем класса 
-				var addId = $(this).parent().attr("id");
+	    	$(this).toggleClass("active");	
+			$("#content").remove();
+					
+			$(".packlist").append("<div id='content'></div>");
 			
-				//Выводим элементы ассоциированного массива для конкретной нажатой кнопки с категорией addId
-				for(var item in arr[addId]){
+			var el = $(".check.active");
+
+			el.each(function(index, value){
+
+				var newId = $(value).parent().attr("id");
+	
+				//Выводим элементы ассоциированного массива для конкретной нажатой кнопки с категорией newId
+				for(var item in arr[newId]){
+
 					//Выводим div с названием категории
-					$(".packlist").find("article." + item).append("<div class='title " + addId + "'" + "data="+ item + ">" + cat[item] + "</div>");
+					$("#content").append("<article class='"+ item +"'></article>");
+					$("#content").find("article." + item).append("<div class='title " + newId + "'" + "data="+ item + ">" + cat[item] + "</div>");
 					
 					//Выводим div с элементами массива
-					$.each(arr[addId][item], function(key, val) {
-						$ (".packlist").find("article." + item).append("<div class='" + addId + "'" + "data="+ item + ">" + val + "</div>");
+					$.each(arr[newId][item], function(key, val) {
+						$("#content").find("article." + item).append("<div class='" + newId + "'" + "data="+ item + ">" + val + "</div>");
 					});
 				}
 
-
-				//Скрываем повторы, добаляя класс hidden
-				var supervise = {};
-				$('article div').each(function() {
-				    var txt = $(this).text();
-				    if (supervise[txt])
-				        $(this).addClass('hidden');
-				    else
-				        supervise[txt] = true;
-				});
-
 				//Анимируем появление
-				$('article .'+ addId).animate({    
-					"top":"0px"
-				}, 500);
+				$('article .'+ newId).animate({    
+							"top":"0px"
+				}, 500);				
+			}); 
 
-				//$('article div').click(function(){ 
-				//	$(this).toggleClass("strike");
-				//});
 
-					var th = $(this).parent().parent();
-					if ( $(th).hasClass("nature")) {
-		     		$('.civil').addClass('disable');
-						$('.civil div div').removeClass('check').addClass('checkfake');
-		    	}
-	    } 
+			//Добавляем класс hidden для повторяющихся элементов DOM
+			var supervise2 = {};
+			$('article div').each(function() {
+				var txt = $(this).text();
+				if (supervise2[txt])
+					$(this).remove();
+				else
+					supervise2[txt] = true;
+			});
+			
+		
+
+			
+			function disableList(selector, target)
+			{
+				//Записываем в переменную id родителя, которое соответствует div с таким же именем класса      
+				var addItems = $(selector);    
+						
+				if(addItems.length > 0){				
+					$(target).addClass('disable');
+					$(target + " .check").addClass('fake');
+					$(target + " .check").removeClass('check');
+					
+				}
+				else {
+					$(target).removeClass('disable');
+					$(target).addClass('category');
+				}			
+			}
+			
+			disableList(".nature .check.active", '.civil');
+			disableList(".civil .check.active", '.nature');
+			
+			
 	});
 });
 
