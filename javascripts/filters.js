@@ -372,12 +372,12 @@ $('document').ready(function(){
 
 	
 	$(".check").click(function(Event){ 
-			console.log(Event.target);
 			//Скрываем подсказку
 			$('.tips').fadeOut(50);
 
-	    	//Удаляем класс "active", кнопка переходит в ненажатое состояние
-	    	$(this).toggleClass("active");	
+    	//Удаляем и добавляем класс "active", кнопка переходит в ненажатое состояние
+    	$(this).toggleClass("active");	
+
 			$("#content").remove();
 					
 			$(".packlist").append("<div id='content'></div>");
@@ -391,17 +391,17 @@ $('document').ready(function(){
 				//Выводим элементы ассоциированного массива для конкретной нажатой кнопки с категорией newId
 				for(var item in arr[newId]){
 
-					//Выводим div с названием категории
+					// Выводим div с названием категории
 					$("#content").append("<article class='"+ item +"'></article>");
 					$("#content").find("article." + item).append("<div class='title " + newId + "'" + "data="+ item + ">" + cat[item] + "</div>");
 					
-					//Выводим div с элементами массива
+					// Выводим div с элементами массива
 					$.each(arr[newId][item], function(key, val) {
 						$("#content").find("article." + item).append("<div class='" + newId + "'" + "data="+ item + ">" + val + "</div>");
 					});
 				}
 
-				//Анимируем появление
+				// Анимируем появление
 				$('article .'+ newId).animate({    
 							"top":"0px"
 				}, 500);				
@@ -428,20 +428,14 @@ $('document').ready(function(){
 						
 				if(addItems.length > 0){				
 					$(target).addClass('disable');
-					$(target + " .check").addClass('fake');
-					$(target + " .check").removeClass('check');
-					
 				}
 				else {
 					$(target).removeClass('disable');
-					$(target).addClass('category');
 				}			
 			}
 			
 			disableList(".nature .check.active", '.civil');
 			disableList(".civil .check.active", '.nature');
-			
-			
 	});
 });
 

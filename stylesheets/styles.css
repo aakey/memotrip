@@ -120,14 +120,6 @@ aside .check{
   background:#fff;
   border-radius:2px;
 }
-aside .fake{
-  width:12px;
-  height:12px;
-  border:2px solid #ccc;
-  float:right;
-  background:#fff;
-  border-radius:2px;
-}
 
 aside .check:hover{
   cursor:hand;
